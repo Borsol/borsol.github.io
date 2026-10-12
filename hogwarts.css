@@ -11,6 +11,10 @@
     overflow: visible !important;
 }
 
+.BW-MainPanel .LG-DataTableWidget {
+    overflow: visible !important;
+}
+
 .BW-MainPanel .LG-DataTableWidget .LG-ScrollPanel {
     height: auto !important;
     overflow: visible !important;
