@@ -1,0 +1,10 @@
+.BW-MainPanel {font-family:Georgia,serif !important;}
+.BW-Header {background:#bfa5a5 !important;}
+.BW-Header .LG-Button, .BW-Header .LG-IconButton {background:#666 !important;color:#fff !important;}
+.BW-MainPanel .LG-DataTableHeader {background:#666 !important;color:#fff !important;}
+.BW-MainPanel .LG-DataTableEvenRowCell {background:#999 !important;}
+.BW-MainPanel .LG-DataTableOddRowCell {background:#888 !important;}
+.BW-MainPanel div.gwt-DataPager {background:#bfa5a5 !important;}
+.Bewerber-Web-Common-Heading {color:#a18a8a !important;}
+.Bewerber-Web-Common-Info {color:#bfa5a5 !important;}
+.Bewerber-Web-Common-Info a {color:#333 !important;}
