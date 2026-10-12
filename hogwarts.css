@@ -1,4 +1,4 @@
-.BW-MainPanel {font-family:Georgia,serif !important;max-width: 1400px !important;,margin: 0 auto !important;}
+.BW-MainPanel {font-family:Georgia,serif !important;}
 .BW-Header {background:#bfa5a5 !important;}
 .BW-Header .LG-Button, .BW-Header .LG-IconButton {background:#666 !important;color:#fff !important;}
 .BW-MainPanel .LG-DataTableHeader {background:#666 !important;color:#fff !important;}
@@ -8,3 +8,11 @@
 .Bewerber-Web-Common-Heading {color:#a18a8a !important;}
 .Bewerber-Web-Common-Info {color:#bfa5a5 !important;}
 .Bewerber-Web-Common-Info a {color:#333 !important;}
+body.BewerberWeb {
+display: flex !important;
+justify-content: center !important;
+}
+.BW-MainPanel {
+width: 100% !important;
+max-width: 1400px !important;
+}
