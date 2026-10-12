@@ -18,12 +18,9 @@ justify-content: center !important;
   background:#666 !important;color:#fff !important;
 }
 
-/* Tabellenhintergrund entfernen */
-/*.BW-MainPanel .table {
-    border-spacing: 0 16px !important;
-    border-collapse: separate !important;
+.BW-MainPanel .table {
+    border-spacing: 0 important;
 }
-*/
 
 .BW-MainPanel .LG-DataTableHeader {
   background:#666 !important;color:#fff !important;
