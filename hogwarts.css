@@ -21,7 +21,7 @@
 
 /*Tabellenzeilen stylen*/
 .BW-MainPanel .LG-DataTableWidget .LG-DataTableEvenRow td,.LG-DataTableOddRow td {
-  background: #ffffff !important;
+  background: #fff !important;
   border-bottom: 1px solid #e5e5e5 !important;
   padding: 16px 20px !important;
 }
