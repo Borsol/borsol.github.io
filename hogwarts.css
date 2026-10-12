@@ -22,6 +22,12 @@ justify-content: center !important;
   background:#666 !important;color:#fff !important;
 }
 
+.LG-Section {
+    border-collapse: separate !important;
+    border-spacing: 0 16px !important;
+    background: transparent !important;
+}
+
 .LG-DataTableWidget > div {
     background: #ffffff !important;
     border-radius: 12px !important;
