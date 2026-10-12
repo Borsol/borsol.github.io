@@ -26,7 +26,7 @@ justify-content: center !important;
 }
 
 /*Zeilen der Tabelle stylen*/
-.BW-MainPanel .LG-DataTableWidget .LG-DataTableCell{
+.BW-MainPanel .LG-DataTableWidget .LG-DataTableCell > dif{
  color: #9f79ee !important;
  border-radius: 12px !important;
  box-shadow: 0 2px 8px rgba(0,0,0,.08) !important;
