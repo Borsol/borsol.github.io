@@ -18,12 +18,14 @@ justify-content: center !important;
   background:#666 !important;color:#fff !important;
 }
 
+/* Tabellenhintergrund entfernen */
 .BW-MainPanel .table {
     border-spacing: 0 16px !important;
     border-collapse: separate !important;
 }
 
-.BW-MainPanel tr {
+/* Card-Effekt für Zeilen */
+.BW-MainPanel .tr {
   background: #fff !important;
   box-shadow: 0 2px 8px rgba(0,0,0,.08) !important;
   border-radius: 10px !important;
