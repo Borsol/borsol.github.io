@@ -16,13 +16,22 @@
 
 .BW-MainPanel .LG-DataTableWidget,
 .LG-DataTableWidget tbody {
-  display: flex !important;
+  display: block !important;
   width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.LG-DataTableWidget colgroup {
+  display: none !important;
 }
 
 .LG-DataTableWidget {
   background: #ca5f17 !important;
+  display: block !important;
   width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
   border: 1px solid #e2e8f0 !important;
   border-radius: 8px !important;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) !important;
@@ -41,8 +50,10 @@
 /*Tabellenzeilen stylen*/
 .BW-MainPanel .LG-DataTableWidget .LG-DataTableEvenRow td,
 .LG-DataTableOddRow td {
-  display: flex !important;
+  display: block !important;
   width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
   background: #0c5c29 !important;
   border-bottom: 1px solid #e5e5e5 !important;
   border-radius: 8px !important;
@@ -52,7 +63,10 @@
 /*Zellen der Tabelle stylen*/
 .BW-MainPanel .LG-DataTableWidget .LG-DataTableCell {
   color: #000000 !important;
-  display: flex !important;
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
   justify-content: space-between !important;
   padding: 8px 0 !important;
   border-bottom: 1px solid #f1f5f9 !important;
