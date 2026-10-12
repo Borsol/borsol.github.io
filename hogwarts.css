@@ -26,11 +26,10 @@ justify-content: center !important;
 }
 
 /*Zeilen der Tabelle stylen*/
-.BW-MainPanel .LG-DataTableWidget td:first-child {
-    font-size: 18px !important;
-    font-weight: 600 !important;
-    color: #005a9c !important;
+.BW-MainPanel .LG-DataTableWidget .LG-DataTableCell{
+   color: #9f79ee !important;   
 }
+
 
 .BW-MainPanel .LG-DataTableEvenRowCell {
   background:#999 !important;
