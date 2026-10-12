@@ -18,9 +18,9 @@ justify-content: center !important;
   background:#666 !important;color:#fff !important;
 }
 
-.BW-MainPanel table{
-  border-collapse: separate !important;
-  border-spacing: 0 16px !important;
+.BW-MainPanel .table {
+    border-spacing: 0 16px !important;
+    border-collapse: separate !important;
 }
 
 .BW-MainPanel .LG-DataTableHeader {
