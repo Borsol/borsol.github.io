@@ -5,32 +5,6 @@
   margin: 20px auto !important;
 }
 
-/*Gesamte Screen z. B. Scrollverhalten bei Überlauf*/
-.BW-PositionsScreen {
-    height: auto !important;
-}
-
-.BW-MainPanel .LG-DataTableWidget .LG-ScrollPanel {
-    height: auto !important;
-}
-
-.BW-MainPanel table td{
-  display: flex !important;
-  padding: 12px !important;
-  border-bottom: 1px solid #e5e7eb !important;
-  color: #4b5563 !important;
-}
-
-.BW-MainPanel table tr{
-  display: block !important;
-  margin-bottom: 15px !important;
-  border-bottom: 1px solid #e5e7eb !important;
-  border-radius: 8px !important;
-  background-color: #005a9c !important;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05) !important;
-}
-
-
 /*Einstellungen für die gesamte Seite*/
 .BewerberWeb body {
   display: flex !important; /*Ausrichtung IFRAME in der Mitte*/
@@ -46,7 +20,7 @@
 }
 
 /*Name der Ausschreibung*/
-.LG-DataTableCell::first-child{
+.LG-DataTableCell:first-child{
   font-size: 18px !important;
   font-weight: 600 !important;
   color: #005a9c !important;
