@@ -22,13 +22,13 @@ justify-content: center !important;
   background:#666 !important;color:#fff !important;
 }
 
-.LG-Section {
+.BW-MainPanel .LG-Section {
     border-collapse: separate !important;
     border-spacing: 0 16px !important;
     background: transparent !important;
 }
 
-.LG-DataTableWidget > div {
+.BW-MainPanel .LG-DataTableWidget > div {
     background: #ffffff !important;
     border-radius: 12px !important;
     box-shadow: 0 2px 8px rgba(0,0,0,.08) !important;
