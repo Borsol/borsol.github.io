@@ -8,12 +8,10 @@
 /*Gesamte Screen z. B. Scrollverhalten bei Überlauf*/
 .BW-PositionsScreen {
     height: auto !important;
-    overflow: visible !important;
 }
 
 .BW-MainPanel .LG-DataTableWidget .LG-ScrollPanel {
     height: auto !important;
-    overflow: visible !important;
 }
 
 .BW-MainPanel table td{
@@ -28,7 +26,7 @@
   margin-bottom: 15px !important;
   border-bottom: 1px solid #e5e7eb !important;
   border-radius: 8px !important;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05) !important;
 }
 
 
