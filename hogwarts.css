@@ -20,9 +20,16 @@ justify-content: center !important;
 
 /*Tabellenüberschrift stylen*/
 .BW-MainPanel .LG-DataTableWidget .LG-DataTableHeader {
-  display: none !important;
+  display: none !important; /*ausgeblendet*/
   background:#666 !important;
   color:#ff1493 !important;
+}
+
+/*Zeilen der Tabelle stylen*/
+.BW-MainPanel .LG-DataTableWidget td:first-child {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    color: #005a9c !important;
 }
 
 .BW-MainPanel .LG-DataTableEvenRowCell {
