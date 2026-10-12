@@ -5,10 +5,10 @@
   margin: 20px auto !important;
 }
 
-body.BewerberWeb {
-display: flex !important;
-justify-content: center !important;
-background: #ff1493 !important;
+.BewerberWeb {
+  display: flex !important;
+  justify-content: center !important;
+  background: #ff1493 !important;
 }
 
 .BW-Header {
@@ -34,7 +34,7 @@ background: #ff1493 !important;
 }
 
 /*Tabellenzeilen stylen*/
-.BW-MainPanel .LG-DataTableWidget .LG-DataTableEvenRow {
+.BW-MainPanel .LG-DataTableWidget .LG-DataTableEvenRow,.LG-DataTableOddRow {
   background: #ffffff !important;
   border-radius: 12px !important;
   box-shadow: 0 2px 8px rgba(0,0,0,.08) !important;
