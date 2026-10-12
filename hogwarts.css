@@ -50,9 +50,9 @@
   padding: 16px 20px !important;
 }
 
-.BW-MainPanel .LG-DataTableWidget .LG-DataTableEvenRow:nth-child(2),.LG-DataTableEvenRow:nth-child(3),
-.LG-DataTableOddRow:nth-child(2),
-.LG-DataTableOddRow:nth-child(3){
+.BW-MainPanel .LG-DataTableWidget .LG-DataTableEvenRow td:nth-child(2),.LG-DataTableEvenRow td:nth-child(3),
+.LG-DataTableOddRow td:nth-child(2),
+.LG-DataTableOddRow td:nth-child(3){
   display: none !important;
 }
 
