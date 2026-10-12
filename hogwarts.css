@@ -49,12 +49,6 @@
   padding: 16px 20px !important;
 }
 
-.BW-MainPanel .LG-DataTableWidget .LG-DataTableEvenRow td:nth-child(2),.LG-DataTableEvenRow td:nth-child(3),
-.LG-DataTableOddRow td:nth-child(2),
-.LG-DataTableOddRow td:nth-child(3){
-  display: none !important;
-}
-
 /*Zellen der Tabelle stylen*/
 .BW-MainPanel .LG-DataTableWidget .LG-DataTableCell {
   color: #000000 !important;
