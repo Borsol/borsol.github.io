@@ -20,7 +20,7 @@ justify-content: center !important;
 
 .BW-MainPanel .LG-DataTableHeader {
   background:#666 !important;color:#fff !important;
-  margin: 20px;
+  margin: 20px !important;
 }
 
 .BW-MainPanel .LG-DataTableEvenRowCell {
