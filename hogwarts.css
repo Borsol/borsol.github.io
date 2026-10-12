@@ -19,7 +19,7 @@ justify-content: center !important;
 }
 
 /*Tabellenrahmen auflösen*/
-.LG-Section {
+.BW-MainPanel .LG-Section {
     border-collapse: separate !important;
     border-spacing: 0 16px !important;
     background: transparent !important;
