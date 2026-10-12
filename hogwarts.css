@@ -1,10 +1,11 @@
 .BW-MainPanel {
   font-family:Georgia,serif !important;
   width: calc(100%-40px) !important;
-  max-width: 1400px !important;
+  max-width: 100% !important;
   margin: 20px auto !important;
 }
 
+/*Gesamte Screen z. B. Scrollverhalten bei Überlauf*/
 .BW-PositionsScreen {
     height: auto !important;
     overflow: visible !important;
