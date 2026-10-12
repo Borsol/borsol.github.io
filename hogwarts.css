@@ -19,13 +19,6 @@
   color:#ff1493 !important;
 }
 
-/*Name der Ausschreibung*/
-.LG-DataTableCell:first-child{
-  font-size: 18px !important;
-  font-weight: 600 !important;
-  color: #005a9c !important;
-}
-
 /*Tabellenzeilen stylen*/
 .BW-MainPanel .LG-DataTableWidget .LG-DataTableEvenRow td,.LG-DataTableOddRow td {
   background: #fff !important;
