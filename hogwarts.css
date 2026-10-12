@@ -16,16 +16,21 @@
     overflow: visible !important;
 }
 
-.BW-MainPanel table {
-  display: grid !important;
-  width: 100% !important;
-  grid-template-columns: repeat(4, 1fr);
-
+.BW-MainPanel table td{
+  display: flex !important;
+  padding: 12px !important;
+  border-bottom: 1px solid #e5e7eb !important;
+  color: #4b5563 !important;
 }
 
-.BW-MainPanel table td, tr{
+.BW-MainPanel table tr{
   display: block !important;
+  margin-bottom: 15px !important;
+  border-bottom: 1px solid #e5e7eb !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
+
 
 /*Einstellungen für die gesamte Seite*/
 .BewerberWeb body {
