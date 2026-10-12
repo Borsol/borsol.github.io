@@ -13,6 +13,7 @@ display: flex !important;
 justify-content: center !important;
 }
 .BW-MainPanel {
-width: 100% !important;
+width: calc(100% - 40px) !important;
 max-width: 1400px !important;
+margin: 20px auto !important;
 }
