@@ -18,6 +18,13 @@ justify-content: center !important;
   background:#666 !important;color:#fff !important;
 }
 
+/*Tabellenrahmen auflösen*/
+.LG-Section {
+    border-collapse: separate !important;
+    border-spacing: 0 16px !important;
+    background: transparent !important;
+}
+
 /*Tabellenüberschrift stylen*/
 .BW-MainPanel .LG-DataTableWidget .LG-DataTableHeader {
   display: none !important; /*ausgeblendet*/
