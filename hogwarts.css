@@ -20,6 +20,10 @@
   display: grid !important;
 }
 
+.BW-MainPanel table td{
+  display: block !important;
+}
+
 /*Einstellungen für die gesamte Seite*/
 .BewerberWeb body {
   display: flex !important; /*Ausrichtung IFRAME in der Mitte*/
