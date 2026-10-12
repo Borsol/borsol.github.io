@@ -6,7 +6,7 @@
 
 /*Einstellungen für die gesamte Seite*/
 .BewerberWeb body {
-  display: flex !important;
+  display: block !important;
   /*Ausrichtung IFRAME in der Mitte*/
   justify-content: center !important;
   /*Ausrichtung IFRAME in der Mitte*/
@@ -47,6 +47,12 @@
   background: #0c5c29 !important;
   border-bottom: 1px solid #e5e5e5 !important;
   padding: 16px 20px !important;
+}
+
+.BW-MainPanel .LG-DataTableWidget .LG-DataTableEvenRow:nth-child(2),.LG-DataTableEvenRow:nth-child(3),
+.LG-DataTableOddRow:nth-child(2),
+.LG-DataTableOddRow:nth-child(3){
+  display: none !important;
 }
 
 /*Zellen der Tabelle stylen*/
