@@ -5,6 +5,16 @@
   margin: 20px auto !important;
 }
 
+.BW-PositionsScreen {
+    height: auto !important;
+    overflow: visible !important;
+}
+
+.LG-ScrollPanel {
+    height: auto !important;
+    overflow: visible !important;
+}
+
 /*Einstellungen für die gesamte Seite*/
 .BewerberWeb body {
   display: flex !important; /*Ausrichtung IFRAME in der Mitte*/
