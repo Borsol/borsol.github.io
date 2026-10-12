@@ -19,6 +19,8 @@
 .BW-MainPanel table {
   display: grid !important;
   width: 100% !important;
+  grid-template-columns: repeat(4, 1fr);
+
 }
 
 .BW-MainPanel table td, tr{
