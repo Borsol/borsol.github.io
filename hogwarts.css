@@ -21,7 +21,11 @@
   max-width: 100% !important;
   box-sizing: border-box !important;
 }
+.LG-DataTableWidget td:first-child(n+2){
+  display: none !important;
+}
 
+.LG-DataTableWidget td:first-child { display: block !important; width: 100% !important; box-sizing: border-box !important; }
 
 .LG-DataTableWidget colgroup,.LG-DataTableWidget col { display: none !important; }
 
