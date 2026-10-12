@@ -18,12 +18,9 @@ justify-content: center !important;
   background:#666 !important;color:#fff !important;
 }
 
-.BW-MainPanel .LG-DataTableWidget .LG-DataTableHeader {
-    display: none !important;
-}
-
 /*Tabellenüberschrift stylen*/
-.BW-MainPanel .LG-DataTableHeader {
+.BW-MainPanel .LG-DataTableWidget .LG-DataTableHeader {
+  display: none !important;
   background:#666 !important;
   color:#ff1493 !important;
 }
