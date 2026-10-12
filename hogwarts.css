@@ -31,8 +31,6 @@ justify-content: center !important;
 
 .BW-MainPanel .LG-DataTableEvenRowCell {
   background:#999 !important;
-  padding: 16px !important;
-  border: none !important;
 }
 
 .BW-MainPanel .LG-DataTableOddRowCell {
