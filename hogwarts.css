@@ -30,8 +30,6 @@
   padding: 12px 16px !important;
 }
 
-.LG-DataTableWidget .DataTableCell:last-child { border-bottom: none !important; }
-
 /*Tabellenüberschrift stylen*/
 .BW-MainPanel .LG-DataTableWidget .LG-DataTableHeader {
   display: none !important;
