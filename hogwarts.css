@@ -23,6 +23,14 @@ justify-content: center !important;
     border-collapse: separate !important;
 }
 
+.BW-MainPanel tr {
+  background: #fff !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08) !important;
+  border-radius: 10px !important;
+}
+
+
+
 .BW-MainPanel .LG-DataTableHeader {
   background:#666 !important;color:#fff !important;
 }
