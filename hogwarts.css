@@ -18,9 +18,7 @@ justify-content: center !important;
   background:#666 !important;color:#fff !important;
 }
 
-/* Ab Spalte 3 ausblenden */
-.BW-MainPanel td:nth-child(n+3),
-.BW-MainPanel th:nth-child(n+3) {
+.BW-MainPanel .LG-DataTableHeader {
     display: none !important;
 }
 
