@@ -1,7 +1,7 @@
 .BW-MainPanel {
   font-family:Georgia,serif !important;
-  max-width: 100% !important;
-  margin: 40px !important;
+  width: calc(100%-40px) !important;
+  margin: 40px auto !important;
 }
 
 /*Einstellungen für die gesamte Seite*/
