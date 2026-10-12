@@ -25,15 +25,36 @@ justify-content: center !important;
 .BW-MainPanel .LG-Section {
     border-collapse: separate !important;
     border-spacing: 0 16px !important;
-    background: transparent !important;
 }
 
-.BW-MainPanel .LG-DataTableWidget > div {
+/* Abstand zwischen den "Cards" */
+.BW-MainPanel .LG-Section {
+    border-collapse: separate !important;
+    border-spacing: 0 12px !important;
+}
+
+/* Alle Zellen einer Zeile */
+.BW-MainPanel .LG-DataTableEvenRow td,
+.BW-MainPanel .LG-DataTableOddRow td {
     background: #ffffff !important;
-    border-radius: 12px !important;
-    box-shadow: 0 2px 8px rgba(0,0,0,.08) !important;
-    padding: 16px !important;
-    margin-bottom: 12px !important;
+    padding: 18px !important;
+    border-top: 1px solid #d8dde6 !important;
+    border-bottom: 1px solid #d8dde6 !important;
+}
+
+/* Linke Seite der Card */
+.BW-MainPanel .LG-DataTableEvenRow td:first-child,
+.BW-MainPanel .LG-DataTableOddRow td:first-child {
+    border-left: 1px solid #d8dde6 !important;
+    border-radius: 12px 0 0 12px !important;
+    font-weight: 600 !important;
+}
+
+/* Rechte Seite der Card */
+.BW-MainPanel .LG-DataTableEvenRow td:last-child,
+.BW-MainPanel .LG-DataTableOddRow td:last-child {
+    border-right: 1px solid #d8dde6 !important;
+    border-radius: 0 12px 12px 0 !important;
 }
 
 .BW-MainPanel .LG-DataTableWidget {
