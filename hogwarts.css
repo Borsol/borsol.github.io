@@ -19,7 +19,7 @@ justify-content: center !important;
 }
 
 .BW-MainPanel .table {
-    border-spacing: 0 important;
+    border-spacing: 0 !important;
 }
 
 .BW-MainPanel .LG-DataTableHeader {
