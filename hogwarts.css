@@ -19,10 +19,11 @@ justify-content: center !important;
 }
 
 /* Tabellenhintergrund entfernen */
-.BW-MainPanel .table {
+/*.BW-MainPanel .table {
     border-spacing: 0 16px !important;
     border-collapse: separate !important;
 }
+*/
 
 .BW-MainPanel .LG-DataTableHeader {
   background:#666 !important;color:#fff !important;
