@@ -1,6 +1,6 @@
 .BW-MainPanel {
   font-family:Georgia,serif !important;
-  width: calc(100%-40px) !important;
+  width: 90% !important;
   max-width: 100% !important;
   margin: 20px auto !important;
 }
