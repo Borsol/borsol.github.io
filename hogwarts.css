@@ -22,10 +22,6 @@
   box-sizing: border-box !important;
 }
 
-.LG-DataTableWidget colgroup {
-  display: none !important;
-}
-
 .LG-DataTableWidget {
   background: #ca5f17 !important;
   display: block !important;
