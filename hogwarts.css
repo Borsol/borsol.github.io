@@ -1,31 +1,62 @@
 .BW-MainPanel {
-  font-family:Georgia,serif !important;
+  font-family: Georgia, serif !important;
   width: calc(100%-40px) !important;
   margin: 40px auto !important;
 }
 
 /*Einstellungen für die gesamte Seite*/
 .BewerberWeb body {
-  display: flex !important; /*Ausrichtung IFRAME in der Mitte*/
-  justify-content: center !important; /*Ausrichtung IFRAME in der Mitte*/
-  background: #f3f6f9 !important; /*Hintergrund der gesamten Seite*/
+  display: flex !important;
+  /*Ausrichtung IFRAME in der Mitte*/
+  justify-content: center !important;
+  /*Ausrichtung IFRAME in der Mitte*/
+  background: #f3f6f9 !important;
+  /*Hintergrund der gesamten Seite*/
 }
+
+.BW-MainPanel table,
+table tbody,
+table tr,
+table td {
+  display: block !important;
+  width: 100% !important;
+}
+
+table tr {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 16px;
+  padding: 12px 16px;
+}
+
+table td {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+table td:last-child { border-bottom: none; }
 
 /*Tabellenüberschrift stylen*/
 .BW-MainPanel .LG-DataTableWidget .LG-DataTableHeader {
-  display: none !important; /*ausgeblendet*/
-  background:#666 !important;
-  color:#ff1493 !important;
+  display: none !important;
+  /*ausgeblendet*/
+  background: #666 !important;
+  color: #ff1493 !important;
 }
 
 /*Tabellenzeilen stylen*/
-.BW-MainPanel .LG-DataTableWidget .LG-DataTableEvenRow td,.LG-DataTableOddRow td {
+.BW-MainPanel .LG-DataTableWidget .LG-DataTableEvenRow td,
+.LG-DataTableOddRow td {
   background: #0c5c29 !important;
   border-bottom: 1px solid #e5e5e5 !important;
   padding: 16px 20px !important;
 }
 
 /*Zellen der Tabelle stylen*/
-.BW-MainPanel .LG-DataTableWidget .LG-DataTableCell{
- color: #000000 !important;
+.BW-MainPanel .LG-DataTableWidget .LG-DataTableCell {
+  color: #000000 !important;
 }
