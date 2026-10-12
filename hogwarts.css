@@ -18,9 +18,10 @@
 
 .BW-MainPanel table {
   display: grid !important;
+  width: 100% !important;
 }
 
-.BW-MainPanel table td{
+.BW-MainPanel table td, tr{
   display: block !important;
 }
 
