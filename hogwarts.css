@@ -18,6 +18,16 @@ justify-content: center !important;
   background:#666 !important;color:#fff !important;
 }
 
+/* Alle Spalten außer der ersten ausblenden */
+.BW-MainPanel .LG-DataTableCell:not(:first-child) {
+    display: none !important;
+}
+
+/* Tabellenkopf ebenfalls */
+.BW-MainPanel .LG-DataTableHeader:not(:first-child) {
+    display: none !important;
+}
+
 /*Tabellenüberschrift stylen*/
 .BW-MainPanel .LG-DataTableHeader {
   background:#666 !important;
