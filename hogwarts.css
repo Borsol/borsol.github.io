@@ -5,10 +5,11 @@
   margin: 20px auto !important;
 }
 
+/*Einstellungen für die gesamte Seite*/
 .BewerberWeb body {
-  display: flex !important;
-  justify-content: center !important;
-  background: #f3f6f9 !important;
+  display: flex !important; /*Ausrichtung IFRAME in der Mitte*/
+  justify-content: center !important; /*Ausrichtung IFRAME in der Mitte*/
+  background: #f3f6f9 !important; /*Hintergrund der gesamten Seite*/
 }
 
 /*Tabellenrahmen auflösen*/
