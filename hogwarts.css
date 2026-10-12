@@ -26,12 +26,10 @@
 }
 
 /*Tabellenzeilen stylen*/
-.BW-MainPanel .LG-DataTableWidget .LG-DataTableEvenRow,.LG-DataTableOddRow {
+.BW-MainPanel .LG-DataTableWidget .LG-DataTableEvenRow td,.LG-DataTableOddRow td {
   background: #ffffff !important;
-  border-radius: 12px !important;
-  box-shadow: 0 2px 8px rgba(0,0,0,.08) !important;
-  padding: 16px !important;
-  margin-bottom: 12px !important;
+  border-bottom: 1px solid #e5e5e5 !important;
+  padding: 16px 20px !important;
 }
 
 /*Zellen der Tabelle stylen*/
