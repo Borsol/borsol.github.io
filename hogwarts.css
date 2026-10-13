@@ -3,6 +3,10 @@
   align-content: center !important;
 }
 
+.LG-ScrollPanel-Content{
+  max-heigth: 90% !important;
+}
+
 .BW-MainPanel {
   font-family:Georgia,serif !important;
   max-width: 90% !important;
