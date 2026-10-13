@@ -5,6 +5,7 @@
 
 .BW-MainPanel {
   font-family:Georgia,serif !important;
+  max-width: calc(100%-20px) !important;
 }
 
 .BW-Header {
