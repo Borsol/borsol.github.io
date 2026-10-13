@@ -16,6 +16,11 @@
   border-radius: 8px 8px 0 0 !important;
 }
 
+.LG-Section {
+  border-collapse: separate !important;
+  border-spacing: 10px !important;
+  background: #172536 !important;
+}
 .LG-DataTableHeader {
   background: #666 !important;
   color: #fff !important;
