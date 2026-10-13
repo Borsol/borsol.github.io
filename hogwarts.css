@@ -10,12 +10,15 @@
 .BW-MainPanel {
   font-family: Georgia, serif !important;
   min-width: 100px !important;
-  max-width: calc(100%-20px) !important;
-  width: calc(100%-20px) !important;
+  max-width: (100%-20px) !important;
+  width: (100%-20px) !important;
   heigth: 100% !important;
   margin: 40px auto !important;
 }
 
+.LG-ScrollPanel{
+  heigth: 100% !important;
+}
 .LG-Section-Content{
   heigth: 100% !important;
 }
