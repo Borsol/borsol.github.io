@@ -13,6 +13,11 @@
   background:#bfa5a5 !important;
 }
 
+.LG-DataTableWidget {
+  border-collapse: collapse !important;
+  border-spacing: 0 12px !important;
+}
+
 .BW-Header .LG-Button, .BW-Header .LG-IconButton {
   background:#666 !important;
   color:#fff !important;
