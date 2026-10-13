@@ -1,15 +1,1 @@
-/*Einstellungen für die gesamte Seite*/
-.BewerberWeb {
-  display: block !important;
-  /*Ausrichtung IFRAME in der Mitte*/
-  justify-content: center !important;
-  /*Ausrichtung IFRAME in der Mitte*/
-  background: #f3f6f9 !important;
-}
 
-/*Der eigentliche Bereich, in dem alle Darstellungsinhalte sind*/
-.BW-MainPanel {
-  font-family: Georgia, serif !important;
-  max-width: calc(100%-20px) !important;
-  margin: 40px auto !important;
-}
