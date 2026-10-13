@@ -13,9 +13,9 @@
   background:#bfa5a5 !important;
 }
 
-.BW-Header table{
-  border-collapse: collapse !important;
+.LG-Section table{
   border-spacing: 0 12px !important;
+  border-collapse: collapse !important;
 }
 
 .BW-Header .LG-Button, .BW-Header .LG-IconButton {
