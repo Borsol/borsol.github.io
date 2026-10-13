@@ -1,14 +1,17 @@
 /*Gesamte Seite*/
 .BewerberWeb {}
 
-/*Div, in dem der gesamte Content liegt (Kopfzeile, Tabelle, Fußnote)*/
+/*Div, in dem der gesamte Content liegt (Kopfzeile, Tabelle, Fußnote) und Abstände*/
 .LG-Scrollpanel-Content{
-  overflow: hidden;
+  heigth: 100% !important;
 }
 
+/*Der eigentliche Bereich, in dem alle Darstellungsinhalte sind*/
 .BW-MainPanel {
   font-family: Georgia, serif !important;
+  min-width: 100px !important;
   max-width: calc(100%-20px) !important;
+  heigth: 100% !important;
   margin: 40px auto !important;
 }
 
@@ -20,6 +23,7 @@
   /*Ausrichtung IFRAME in der Mitte*/
   background: #f3f6f9 !important;
   /*Hintergrund der gesamten Seite*/
+  heigth: 100% !important;
 }
 
 .BW-MainPanel .LG-DataTableWidget,
@@ -29,18 +33,12 @@
   max-width: 100% !important;
   box-sizing: border-box !important;
 }
-.LG-DataTableWidget td:first-child(n+2){
-  display: none !important;
-}
-
-.LG-DataTableWidget .DataTableCell:first-child { display: block !important; width: 100% !important; box-sizing: border-box !important; }
-
-.LG-DataTableWidget colgroup,.LG-DataTableWidget col { display: none !important; }
 
 .LG-DataTableWidget {
   background: #ca5f17 !important;
   display: flex !important;
   width: 100% !important;
+  heigth: 100% !important;
   max-width: 100% !important;
   box-sizing: border-box !important;
   border: 1px solid #e2e8f0 !important;
