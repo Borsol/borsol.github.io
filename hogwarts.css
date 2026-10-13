@@ -16,6 +16,14 @@
   margin: 40px auto !important;
 }
 
+.LG-Section-Content{
+  heigth: 100% !important;
+}
+
+.LG-MaskDataTable-Content{
+  heigth: 100% !important;
+}
+
 .BW-PositionsScreen{
   heigth: 100% !important;
 }
