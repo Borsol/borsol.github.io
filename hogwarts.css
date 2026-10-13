@@ -8,7 +8,7 @@
 
 /*Einstellungen für die gesamte Seite*/
 .BewerberWeb body {
-  display: block !important;
+  /*display: block !important;*/
   /*Ausrichtung IFRAME in der Mitte*/
   justify-content: center !important;
   /*Ausrichtung IFRAME in der Mitte*/
