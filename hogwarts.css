@@ -7,40 +7,9 @@
 
 /*Einstellungen für die gesamte Seite*/
 .BewerberWeb body {
-  /*display: block !important;*/
+  display: block !important;
   /*Ausrichtung IFRAME in der Mitte*/
   justify-content: center !important;
   /*Ausrichtung IFRAME in der Mitte*/
   background: #f3f6f9 !important;
-  /*Hintergrund der gesamten Seite*/
-  heigth: 100% !important;
-}
-
-.BW-MainPanel .LG-DataTableWidget,
-.LG-DataTableWidget tbody {
-  width: 100% !important;
-  max-width: 100% !important;
-}
-
-.LG-DataTableWidget {
-  background: #ca5f17 !important;
-}
-
-/*Tabellenüberschrift stylen*/
-.BW-MainPanel .LG-DataTableWidget .LG-DataTableHeader {
-  display: none !important;
-  /*ausgeblendet*/
-  background: #666 !important;
-  color: #ff1493 !important;
-}
-
-/*Tabellenzeilen stylen*/
-.BW-MainPanel .LG-DataTableWidget .LG-DataTableEvenRow td,
-.LG-DataTableOddRow td {
-  background: #0c5c29 !important;
-}
-
-/*Zellen der Tabelle stylen*/
-.BW-MainPanel .LG-DataTableWidget .LG-DataTableCell {
-  color: #000000 !important;
 }
