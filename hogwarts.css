@@ -21,8 +21,13 @@
   border-spacing: 0 12px !important;
 }
 
-.LG-Button, .LG-IconButton {
+.LG-Button {
   background: #666 !important;
+  color:#fff !important;
+}
+
+.LG-IconButton {
+  background: #176B52 !important;
   color:#fff !important;
 }
 
