@@ -15,6 +15,10 @@
   margin: 40px auto !important;
 }
 
+.BW-PositionsScreen{
+  heigth: 100% !important;
+}
+
 /*Einstellungen für die gesamte Seite*/
 .BewerberWeb body {
   display: block !important;
