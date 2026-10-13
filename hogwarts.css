@@ -13,7 +13,8 @@
 
 .BW-Header {
   background: #172536 !important;
-  border-radius: 8px !important;
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
 }
 
 .LG-DataTableWidget {
@@ -69,8 +70,8 @@
 .Bewerber-Web-Common-Info {
   background: #172536 !important;
   color: #C6A34A !important;
-  border-radius: 8px !important;
-  padding: 4px 10px !important;
+  border-bottom-right-radius: 8px !important;  padding: 4px 10px !important;
+  border-bottom-left-radius: 8px !important;  padding: 4px 10px !important;
 }
 
 .LG-Anchor {
