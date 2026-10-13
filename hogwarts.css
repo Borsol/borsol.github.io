@@ -13,11 +13,6 @@
   background:#bfa5a5 !important;
 }
 
-.LG-CollapsibleScrollDataTable-MainTable {
-  border-spacing: 0 12px !important;
-  border-collapse: collapse !important;
-}
-
 .BW-Header .LG-Button, .BW-Header .LG-IconButton {
   background:#666 !important;
   color:#fff !important;
