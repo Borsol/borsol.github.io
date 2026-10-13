@@ -8,13 +8,12 @@
   font-family: Georgia,serif !important;
   max-width: calc(100% - 40px) !important;
   margin: 20px auto !important;
-  border-radius: 8px !important;
+  border-radius: 8px 8px 8px 8px !important;
 }
 
 .BW-Header {
   background: #172536 !important;
-  border-top-left-radius: 8px !important;
-  border-top-right-radius: 8px !important;
+  border-radius: 8px 8px 0 0 !important;
 }
 
 .LG-DataTableWidget {
@@ -70,8 +69,8 @@
 .Bewerber-Web-Common-Info {
   background: #172536 !important;
   color: #C6A34A !important;
-  border-bottom-right-radius: 8px !important;  padding: 4px 10px !important;
-  border-bottom-left-radius: 8px !important;  padding: 4px 10px !important;
+  border-radius: 0 0 8px 8px !important;
+
 }
 
 .LG-Anchor {
