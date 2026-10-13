@@ -22,8 +22,9 @@
   background: #172536 !important;
 }
 .LG-DataTableHeader {
-  background: #666 !important;
-  color: #fff !important;
+  background: #7A263A !important;
+  color: #C6A34A !important;
+  font-weight: bold !important;
 }
 
 /*Suchbutton*/
