@@ -1,6 +1,14 @@
+/*Gesamte Seite*/
+.BewerberWeb {}
+
+/*Div, in dem der gesamte Content liegt (Kopfzeile, Tabelle, Fußnote)*/
+.LG-Scrollpanel-Content{
+  overflow: hidden;
+}
+
 .BW-MainPanel {
   font-family: Georgia, serif !important;
-  width: calc(100%-20px) !important;
+  max-width: calc(100%-20px) !important;
   margin: 40px auto !important;
 }
 
