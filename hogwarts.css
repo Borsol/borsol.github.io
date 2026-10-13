@@ -4,13 +4,13 @@
 }
 
 .LG-ScrollPanel-Content{
-  max-heigth: 90% !important;
+  max-heigth: 100% !important;
 }
 
 .BW-MainPanel {
   font-family:Georgia,serif !important;
-  max-width: 90% !important;
-  max-heigth: 90% !important;
+  max-width: calc(100% - 40px) !important;
+  margin: 20px auto !important;
 }
 
 .BW-Header {
