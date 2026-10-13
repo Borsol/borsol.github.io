@@ -20,7 +20,7 @@
   border-collapse: collapse !important;
   border-spacing: 0 12px !important;
 }
-.LG-IconButton {
+.LG-Button, .LG-IconButton {
   background: #7A263A !important;
   color:#fff !important;
 }
