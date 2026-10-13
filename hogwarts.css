@@ -42,7 +42,9 @@
   color: #fff !important;
 }
 
-
+.LG-MaskDataTable-Search-Wrapper .LG-SearchBox {
+  background: #176B52 !important;
+}
 
 .LG-DataTableEvenRowCell {
   background: #999 !important;
