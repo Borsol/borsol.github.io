@@ -27,13 +27,15 @@
 }
 
 .LG-IconButton {
-  background: #7A263A !important;
-  color:#fff !important;
+  background: #172536 !important;
+  color:#C6A34A !important;
+  border-color: #C6A34A !important;
 }
 
 .LG-Button.tertiary {
-  background: #7A263A !important;
+  background: #172536 !important;
   color:#fff !important;
+  border
 }
 
 .LG-DataTableEvenRowCell {
