@@ -44,7 +44,6 @@
 
 .BW-MainPanel .LG-DataTableWidget,
 .LG-DataTableWidget tbody {
-  display: block !important;
   width: 100% !important;
   max-width: 100% !important;
 }
@@ -55,7 +54,6 @@
   heigth: 100% !important;
   max-width: 100% !important;
   border: 1px solid #e2e8f0 !important;
-  margin-bottom: 16px !important;
   padding: 12px 16px !important;
 }
 
