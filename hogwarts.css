@@ -7,10 +7,12 @@
   font-family:Georgia,serif !important;
   max-width: calc(100% - 40px) !important;
   margin: 20px auto !important;
+  border-radius: 8px !important;
 }
 
 .BW-Header {
   background:#bfa5a5 !important;
+  border-radius: 8px !important;
 }
 
 .LG-DataTableWidget {
