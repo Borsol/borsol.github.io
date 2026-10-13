@@ -11,7 +11,7 @@
   border-radius: 8px !important;
 }
 
-.MainPanel .BW-Header {
+.BW-Header {
   background:#172536 !important;
   border-radius: 8px !important;
 }
@@ -21,20 +21,20 @@
   border-spacing: 0 12px !important;
 }
 
-.BW-Header .LG-Button, .BW-Header .LG-IconButton {
+.LG-Button, .BW-Header .LG-IconButton {
   background:#666 !important;
   color:#fff !important;
 }
 
-.BW-MainPanel .LG-DataTableHeader {
+.LG-DataTableHeader {
   background:#666 !important;
   color:#fff !important;
 }
 
-.BW-MainPanel .LG-DataTableEvenRowCell {
+.LG-DataTableEvenRowCell {
   background:#999 !important;
 }
 
-.BW-MainPanel .LG-DataTableOddRowCell {
+.LG-DataTableOddRowCell {
   background:#888 !important;
 }
