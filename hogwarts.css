@@ -50,6 +50,11 @@
   background-color: #7A263A !important;
 }
 
+.LG-CollapsibleScrollDataTable-MainTable {
+  border-collapse: separate !important;
+  border-spacing: 0 8px !important;
+}
+
 .LG-DataTableEvenRowCell {
   background: #999 !important;
 }
