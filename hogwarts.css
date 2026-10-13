@@ -20,14 +20,15 @@
   border-collapse: collapse !important;
   border-spacing: 0 12px !important;
 }
-.LG-Button, .LG-IconButton {
-  background: #7A263A !important;
-  color:#fff !important;
-}
 
 .LG-DataTableHeader {
   background: #666 !important;
   color: #fff !important;
+}
+
+.LG-Button, .LG-IconButton {
+  background: #7A263A !important;
+  color:#fff !important;
 }
 
 .LG-DataTableEvenRowCell {
