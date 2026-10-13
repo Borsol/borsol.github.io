@@ -5,7 +5,7 @@
 }
 
 .BW-MainPanel {
-  font-family:Georgia,serif !important;
+  font-family: Georgia,serif !important;
   max-width: calc(100% - 40px) !important;
   margin: 20px auto !important;
   border-radius: 8px !important;
@@ -34,8 +34,15 @@
 
 .LG-Button.tertiary {
   background: #176B52 !important;
-  color:#fff !important;
+  color: #fff !important;
 }
+
+.LG-Button.tertiary:hover{
+  background: #EAF2ED !important;
+  color: #fff !important;
+}
+
+
 
 .LG-DataTableEvenRowCell {
   background: #999 !important;
