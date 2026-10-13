@@ -11,17 +11,17 @@
   border-radius: 8px 8px 8px 8px !important;
 }
 
-.BW-Header {
+.BewerberWeb .BW-PositionsScreen .BW-Header {
   background: #172536 !important;
   border-radius: 8px 8px 0 0 !important;
 }
 
-.LG-Section {
+.BewerberWeb .BW-PositionsScreen .LG-Section {
   border-collapse: separate !important;
   border-spacing: 10px !important;
   background: #172536 !important;
 }
-.LG-DataTableHeader {
+.BewerberWeb .BW-PositionsScreen .LG-DataTableHeader {
   background: #7A263A !important;
   color: #C6A34A !important;
   font-weight: bold !important;
@@ -29,39 +29,39 @@
 }
 
 /*Suchbutton*/
-.LG-IconButton {
+.BewerberWeb .LG-IconButton {
   background: #172536 !important;
   color:#C6A34A !important;
   border-color: #C6A34A !important;
 }
 
 /*Anmelde-Button*/
-.LG-Button.tertiary {
+.BewerberWeb .LG-Button.tertiary {
   background: #176B52 !important;
   color: #C6A34A !important;
 }
 
 /*Anmelde-Button Effekte*/
-.LG-Button.tertiary:hover{
+.BewerberWeb .LG-Button.tertiary:hover{
   background: #176b528c !important;
   color: #fff !important;
 }
 
 /*Suchleiste (klappt auf bei Klick auf Lupe)*/
-.LG-MaskDataTable-Search-Wrapper .LG-SearchBox {
+.BewerberWeb .BW-PositionsScreen .LG-MaskDataTable-Search-Wrapper .LG-SearchBox {
   background-color: #7A263A !important;
 }
 
-.LG-CollapsibleScrollDataTable-MainTable {
+.BewerberWeb .BW-PositionsScreen .LG-CollapsibleScrollDataTable-MainTable {
   border-collapse: separate !important;
   border-spacing: 0 8px !important;
 }
 
-.LG-DataTableEvenRowCell {
+.BewerberWeb .BW-PositionsScreen .LG-DataTableEvenRowCell {
   background: #F5F1E8 !important;
 }
 
-.LG-DataTableOddRowCell {
+.BewerberWeb .BW-PositionsScreen .LG-DataTableOddRowCell {
   background: #F5F1E8 !important;
 }
 
