@@ -6,7 +6,7 @@
 }
 
 /*Einstellungen für die gesamte Seite*/
-.BewerberWeb body {
+.BewerberWeb {
   display: block !important;
   /*Ausrichtung IFRAME in der Mitte*/
   justify-content: center !important;
