@@ -25,6 +25,7 @@
   background: #7A263A !important;
   color: #C6A34A !important;
   font-weight: bold !important;
+  border-top: none !important;
 }
 
 /*Suchbutton*/
@@ -37,7 +38,7 @@
 /*Anmelde-Button*/
 .LG-Button.tertiary {
   background: #176B52 !important;
-  color: #fff !important;
+  color: #C6A34A !important;
 }
 
 /*Anmelde-Button Effekte*/
