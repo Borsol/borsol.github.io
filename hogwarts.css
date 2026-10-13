@@ -26,7 +26,12 @@
   color: #fff !important;
 }
 
-.LG-Button, .LG-IconButton {
+.LG-IconButton {
+  background: #7A263A !important;
+  color:#fff !important;
+}
+
+.LG-Button.tertiary {
   background: #7A263A !important;
   color:#fff !important;
 }
