@@ -26,24 +26,28 @@
   color: #fff !important;
 }
 
+/*Suchbutton*/
 .LG-IconButton {
   background: #172536 !important;
   color:#C6A34A !important;
   border-color: #C6A34A !important;
 }
 
+/*Anmelde-Button*/
 .LG-Button.tertiary {
   background: #176B52 !important;
   color: #fff !important;
 }
 
+/*Anmelde-Button Effekte*/
 .LG-Button.tertiary:hover{
   background: #EAF2ED !important;
   color: #fff !important;
 }
 
+/*Suchleiste (klappt auf bei Klick auf Lupe)*/
 .LG-MaskDataTable-Search-Wrapper .LG-SearchBox {
-  background: #176B52 !important;
+  background-color: #176B52 !important;
 }
 
 .LG-DataTableEvenRowCell {
