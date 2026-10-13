@@ -16,11 +16,6 @@
   border-radius: 8px 8px 0 0 !important;
 }
 
-.LG-DataTableWidget {
-  border-collapse: collapse !important;
-  border-spacing: 0 12px !important;
-}
-
 .LG-DataTableHeader {
   background: #666 !important;
   color: #fff !important;
@@ -70,7 +65,7 @@
   background: #172536 !important;
   color: #C6A34A !important;
   border-radius: 0 0 8px 8px !important;
-
+  padding: 16px 10px !important;
 }
 
 .LG-Anchor {
