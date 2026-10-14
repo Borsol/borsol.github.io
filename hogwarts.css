@@ -103,3 +103,25 @@
 .LG-Anchor {
   color: #C6A34A !important;
 }
+
+.LG-DataTableEvenRow .LG-DataTableCell, .LG-DataTableOddRow .LG-DataTableCell {
+  border-top: 1px solid #C6A34A !important;
+  border-bottom: 1px solid #C6A34A !important;  
+}
+
+
+.LG-DataTableEvenRow .LG-DataTableCell:first-child {
+  border-radius: 10px 0 0 10px !important;
+}
+
+.LG-DataTableEvenRow .LG-DataTableCell:last-child {
+  border-radius: 0 10px 10px 0 !important;
+}
+
+.LG-DataTableOddRow .LG-DataTableCell:first-child {
+  border-radius: 10px 0 0 10px !important;
+}
+
+.LG-DataTableOddRow .LG-DataTableCell:last-child {
+  border-radius: 0 10px 10px 0 !important;
+}
