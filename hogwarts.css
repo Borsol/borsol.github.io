@@ -82,6 +82,11 @@
   color: #C6A34A !important;
 }
 
+.LG-DataTable-Footer .gwt-DataPager .LG-NumberBox{
+  background-color: #7A263A !important;
+  color: #C6A34A !important;
+}
+
 /*Fußzeile*/
 .Bewerber-Web-Common-Info {
   background: #172536 !important;
