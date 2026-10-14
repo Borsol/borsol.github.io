@@ -89,6 +89,7 @@
 .LG-DataTable-Footer .gwt-DataPager .LG-NumberBox{
   background-color: #7A263A !important;
   color: #C6A34A !important;
+  box-shadow: 0 0 0 1px #C6A34A inset !important;
 }
 
 /*Fußzeile*/
