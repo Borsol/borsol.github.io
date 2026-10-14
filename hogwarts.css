@@ -76,6 +76,11 @@
   height: 700px !important;
 }
 
+.LG-DataTable-Footer {
+  background: #7A263A !important;
+  color: #C6A34A !important;
+}
+
 /*Fußzeile*/
 .Bewerber-Web-Common-Info {
   background: #172536 !important;
