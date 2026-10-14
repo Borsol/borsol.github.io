@@ -72,6 +72,10 @@
   color: #C6A34A !important;
 }
 
+.BewerberWeb .LG-DataTableWidget {
+  height: 700px !important;
+}
+
 /*Fußzeile*/
 .Bewerber-Web-Common-Info {
   background: #172536 !important;
