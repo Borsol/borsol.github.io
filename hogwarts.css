@@ -76,7 +76,8 @@
   height: 700px !important;
 }
 
-.LG-DataTable-Footer {
+/*Fußzeile der Tabelle mit Seitenzahlen*/
+.LG-DataTable-Footer .gwt-DataPager {
   background: #7A263A !important;
   color: #C6A34A !important;
 }
