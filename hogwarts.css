@@ -24,9 +24,14 @@
 .BewerberWeb .BW-PositionsScreen .LG-DataTableHeader {
   background: #7A263A !important;
   color: #C6A34A !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  font-size: 12px !important;
   font-weight: bold !important;
   border-top: none !important;
+  padding: 5px 30px !important;
 }
+
 
 /*Suchbutton*/
 .BewerberWeb .LG-IconButton {
@@ -54,16 +59,10 @@
 
 .BewerberWeb .BW-PositionsScreen .LG-CollapsibleScrollDataTable-MainTable {
   border-collapse: separate !important;
-  border-spacing: 0 8px !important;
+  border-spacing: 0 20px !important;
+  padding: 15px !important;
 }
 
-.BewerberWeb .BW-PositionsScreen .LG-DataTableEvenRowCell {
-  background: #F5F1E8 !important;
-}
-
-.BewerberWeb .BW-PositionsScreen .LG-DataTableOddRowCell {
-  background: #F5F1E8 !important;
-}
 
 /*Fußnote, keine passende Veröffentlichung gefunden*/
 .BewerberWeb .BW-PositionsScreen p {
@@ -74,6 +73,7 @@
 
 .BewerberWeb .LG-DataTableWidget {
   height: 700px !important;
+  background: #F5F1E8 !important;
 }
 
 .LG-DataTable-Footer {
@@ -104,24 +104,69 @@
   color: #C6A34A !important;
 }
 
+.BewerberWeb .BW-PositionsScreen .LG-DataTableEvenRowCell {
+  background: #f7f1df  !important;
+  padding: 18px !important;
+  border-top: 1px solid #f7f1df  !important;
+
+}
+
+.BewerberWeb .BW-PositionsScreen .LG-DataTableOddRowCell {
+  background: #f7f1df  !important;
+  padding: 18px !important;  
+  border-top: 1px solid #f7f1df  !important;
+
+}
+
 .LG-DataTableEvenRow .LG-DataTableCell, .LG-DataTableOddRow .LG-DataTableCell {
-  border-top: 1px solid #C6A34A !important;
-  border-bottom: 1px solid #C6A34A !important;  
+  background: #f7f1df !important;
+  padding: 18px 20px !important;
+  border-bottom: 1px solid #dcc48e !important;
 }
 
 
 .LG-DataTableEvenRow .LG-DataTableCell:first-child {
-  border-radius: 10px 0 0 10px !important;
+  border-radius: 12px 0 0 12px !important;
+  border-left: 6px solid #C9A227   !important;
+  font-weight: 700 !important;
+  font-size: 17px !important;
 }
 
 .LG-DataTableEvenRow .LG-DataTableCell:last-child {
-  border-radius: 0 10px 10px 0 !important;
+  border-radius: 0 12px 12px 0 !important;
 }
 
 .LG-DataTableOddRow .LG-DataTableCell:first-child {
-  border-radius: 10px 0 0 10px !important;
+  border-radius: 12px 0 0 12px !important;
+  border-left: 6px solid #C6A34A !important;
+  font-weight: 700 !important;
+  font-size: 17px !important;
+
 }
 
 .LG-DataTableOddRow .LG-DataTableCell:last-child {
-  border-radius: 0 10px 10px 0 !important;
+  border-radius: 0 12px 12px 0 !important;
+}
+
+.LG-DataTableEvenRow:hover .LG-DataTableCell,
+.LG-DataTableOddRow:hover .LG-DataTableCell {
+  background: #fff7dd !important;
+  transition: all .2 ease !important;
+}
+
+.LG-DataTableCell:nth-child(5) {
+    color: #C9A227 !important;
+    font-weight: 600 !important;
+}
+
+/* Kurzbezeichnung ausblenden */
+.LG-DataTableCell:nth-child(3),
+.LG-DataTableHeader:nth-child(3) {
+    display: none !important;
+}
+
+.LG-DataTableCell:nth-child(2),
+.LG-DataTableCell:nth-child(4) {
+    color: #555 !important;
+    font-size: 14px !important;
 }
