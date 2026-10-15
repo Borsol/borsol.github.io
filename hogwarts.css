@@ -176,6 +176,58 @@ damit eine konsitente Darstellung erreicht werden kann.
     color: #555 !important;
     font-size: 14px !important;
 }
+
+/*Icons einfügen*/
+.LG-DataTableEvenRow .LG-DataTableCell:nth-child(1) ::before,
+.LG-DataTableOddRow .LG-DataTableCell:nth-child(1) ::before 
+{
+    content: "\f64f";
+    font-family: "Font Awesome 5 Free";
+    display: inline-block !important;
+    font-weight: 900;
+    color: #7A263A;
+    margin-right: 8px;
+}
+
+.LG-DataTableEvenRow .LG-DataTableCell:nth-child(2) ::before,
+.LG-DataTableOddRow .LG-DataTableCell:nth-child(2) ::before 
+{
+    content: "\f458";
+    font-family: "Font Awesome 5 Free";
+    display: inline-block !important;
+    font-weight: 900;
+    color: #7A263A;
+    margin-right: 8px;
+}
+
+.LG-DataTableEvenRow .LG-DataTableCell:nth-child(4) ::before,
+.LG-DataTableOddRow .LG-DataTableCell:nth-child(4) ::before 
+{
+    content: "\f073";
+    font-family: "Font Awesome 5 Free";
+    display: inline-block !important; 
+    color: #7A263A;
+    margin-right: 8px;
+}
+
+
+
+
+.LG-DataTableEvenRow:hover .LG-DataTableCell ::before,
+.LG-DataTableOddRow:hover .LG-DataTableCell ::before{
+  animation: bounce 2s ease-in-out infinite !important;
+}
+
+@keyframes bounce {
+    0%, 100% {
+      translateY(0);    }
+    50% {
+        transform: translateY(-3px);
+    }
+}
+
+
+}
 /*-----------------------------------Fußzeile------------------------------------*/
 /*Das div der Fußzeile*/
 .BW-MainPanel .BW-PositionsScreen > .LG-Section .LG-Section-Content .LG-MaskDataTable-Content .LG-DataTable-Footer 
