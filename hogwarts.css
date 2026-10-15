@@ -32,7 +32,6 @@
   padding: 5px 30px !important;
 }
 
-
 /*Suchbutton*/
 .BewerberWeb .LG-IconButton {
   background: #172536 !important;
@@ -55,8 +54,6 @@
 /*Suchleiste (klappt auf bei Klick auf Lupe)*/
 .BewerberWeb .BW-PositionsScreen .LG-MaskDataTable-Search-Wrapper .LG-SearchBox {
   background-color: #7A263A !important;
-  border: 1px solid #C6A34A !important;
-  margin:  10px 0 !important;
 }
 
 .BewerberWeb .BW-PositionsScreen .LG-CollapsibleScrollDataTable-MainTable {
@@ -129,7 +126,7 @@
 
 .LG-DataTableEvenRow .LG-DataTableCell:first-child {
   border-radius: 12px 0 0 12px !important;
-  border-left: 6px solid #C9A227   !important;
+  border-left: 6px solid #C9A227 !important;
   font-weight: 700 !important;
   font-size: 17px !important;
 }
@@ -156,16 +153,60 @@
   transition: all .2 ease !important;
 }
 
+
 .LG-DataTableCell:nth-child(5) {
     color: #C9A227 !important;
     font-weight: 600 !important;
 }
 
-/* Kurzbezeichnung ausblenden */
+/*-----------------------------------Beginn Tabellenspalten------------------------------------*/
+/*
+Spalten des Headers
+Spalten der Tabelle
+Ausblenden von:
+1 = Bezeichung
+2 = Anstellungsort
+3 = Kurzbezeichnung
+4 = Veröffentlichungsdatum
+5 = Auge/Vorschau
+
+Durch das Ausblenden verschieben sich die Spalten danach, weswegen die Nummern sich ändern!
+*/
+.LG-DataTableHeader:nth-child(3),
 .LG-DataTableCell:nth-child(3),
-.LG-DataTableHeader:nth-child(3) {
+.LG-DataTableHeader:nth-child(5),
+.LG-DataTableCell:nth-child(5)
+{
     display: none !important;
 }
+
+/*Festlegen der Breite der Spalten
+Spalten des Headers
+Spalten der Tabelle
+*/
+.BewerberWeb .LG-DataTableWidget col:nth-child(1),
+.BewerberWeb .BW-PositionsScreen .LG-CollapsibleScrollDataTable-MainTable col:nth-child(1)
+{
+  width: 50% !important;
+}
+
+.BewerberWeb .LG-DataTableWidget col:nth-child(2),
+.BewerberWeb .BW-PositionsScreen .LG-CollapsibleScrollDataTable-MainTable col:nth-child(2),
+.BewerberWeb .LG-DataTableWidget col:nth-child(3),
+.BewerberWeb .BW-PositionsScreen .LG-CollapsibleScrollDataTable-MainTable col:nth-child(3)
+{
+  width: 25% !important;
+}
+
+.BewerberWeb .LG-DataTableWidget col:nth-child(4),
+.BewerberWeb .BW-PositionsScreen .LG-CollapsibleScrollDataTable-MainTable col:nth-child(4),
+.BewerberWeb .LG-DataTableWidget col:nth-child(5),
+.BewerberWeb .BW-PositionsScreen .LG-CollapsibleScrollDataTable-MainTable col:nth-child(5)
+{
+  width: 0% !important;
+}
+/*-----------------------------------Ende Tabellenspalten------------------------------------*/
+
 
 .LG-DataTableCell:nth-child(2),
 .LG-DataTableCell:nth-child(4) {
@@ -173,7 +214,4 @@
     font-size: 14px !important;
 }
 
-.LG-SearchBox-Wrapper .LG-SearchBox-ClearIcon, .LG-SearchBox-CaseSensitiveIcon {
-    color: #C9A227 !important;
-    margin: 10px 0 !important;
-}
+
