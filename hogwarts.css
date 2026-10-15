@@ -1,28 +1,34 @@
-.BewerberWeb {
+/*-----------------------------------Gesamte Seite------------------------------------*/
+.BewerberWeb 
+{
   display:block !important;
   align-content: center !important;
   background: #F5F1E8 !important;
 }
 
-.BW-MainPanel {
+/*-----------------------------------Beginn inneres Fenster mit allen Elemente------------------------------------*/
+
+/*Inneres Fenster/div*/
+.BewerberWeb .BW-MainPanel 
+{
   font-family: Georgia,serif !important;
   max-width: calc(100% - 40px) !important;
   margin: 20px auto !important;
   border-radius: 8px 8px 8px 8px !important;
 }
 
+/*Div mit Header, Tabelle und Footer*/
 .BewerberWeb .BW-PositionsScreen .BW-Header {
   background: #172536 !important;
   border-radius: 8px 8px 0 0 !important;
 }
 
-.BewerberWeb .BW-PositionsScreen .LG-Section {
-  border-collapse: separate !important;
-  border-spacing: 10px !important;
-  background: #172536 !important;
+/*Div über der Tabelle, Suchleiste (klappt auf bei Klick auf Lupe)*/
+.BewerberWeb .BW-PositionsScreen .LG-MaskDataTable-Search-Wrapper .LG-SearchBox {
+  background-color: #7A263A !important;
 }
 
-/*-----------------------------------Beginn Seitenheader------------------------------------*/
+/*-----------------------------------Beginn Kopfzeile der Seite------------------------------------*/
 /*Suchbutton (Lupe)
 Über direkte Hierachien die Buttons für den Header stylen. Lässt man die Hierachie weg, 
 dann werden auch die Buttons in der Ausschreibung selbst verändert. 
@@ -47,50 +53,29 @@ Der Hierarchieselektor > stellt die Eltern-Kind Beziehung sicher.
   background: #C6A34A !important;
   color: #7A263A !important;
 }
-/*-----------------------------------Ende Seitenheader------------------------------------*/
+/*-----------------------------------Ende Kopfzeile der Seite------------------------------------*/
 
 
-
-/*Suchleiste (klappt auf bei Klick auf Lupe)*/
-.BewerberWeb .BW-PositionsScreen .LG-MaskDataTable-Search-Wrapper .LG-SearchBox {
-  background-color: #7A263A !important;
+/*-----------------------------------Beginn Tabelle------------------------------------*/
+/*Div mit der Tabelle*/
+.BewerberWeb .BW-PositionsScreen .LG-Section {
+  border-collapse: separate !important;
+  border-spacing: 10px !important;
+  background: #172536 !important;
 }
 
+/*Gesamte übergeordnete Tabelle*/
 .BewerberWeb .BW-PositionsScreen .LG-CollapsibleScrollDataTable-MainTable {
   border-collapse: separate !important;
   border-spacing: 0 20px !important;
   padding: 15px !important;
 }
 
-
-/*Fußnote, keine passende Veröffentlichung gefunden*/
-.BewerberWeb .BW-PositionsScreen p {
-  padding: 16px 10px !important;
-  background: #172536 !important;
-  color: #C6A34A !important;
-}
-
+/*Tabellenbereich der Zeilen*/
 .BewerberWeb .LG-DataTableWidget {
   height: 700px !important;
   background: #F5F1E8 !important;
 }
-
-
-
-/*Fußzeile*/
-.Bewerber-Web-Common-Info {
-  background: #172536 !important;
-  color: #C6A34A !important;
-  border-radius: 0 0 8px 8px !important;
-  padding: 16px 10px !important;
-}
-
-.LG-Anchor {
-  color: #C6A34A !important;
-}
-
-
-/*-----------------------------------Beginn Tabelle------------------------------------*/
 
 /*-----------------------------------Kopfzeile------------------------------------*/
 .BewerberWeb .BW-PositionsScreen .LG-DataTableHeader {
@@ -214,3 +199,25 @@ damit eine konsitente Darstellung erreicht werden kann.
 }
 
 /*-----------------------------------Ende Tabelle------------------------------------*/
+
+/*-----------------------------------Fußzeile der Seite------------------------------------*/
+/*Fußnote, keine passende Veröffentlichung gefunden*/
+.BewerberWeb .BW-PositionsScreen p {
+  padding: 16px 10px !important;
+  background: #172536 !important;
+  color: #C6A34A !important;
+}
+
+/*Div von "Zur Initiativbewerbung"*/
+.Bewerber-Web-Common-Info {
+  background: #172536 !important;
+  color: #C6A34A !important;
+  border-radius: 0 0 8px 8px !important;
+  padding: 16px 10px !important;
+}
+
+/*Link "Zur Initiativbewerbung"*/
+.LG-Anchor {
+  color: #C6A34A !important;
+}
+/*-----------------------------------Ende der Fußzeile------------------------------------*/
