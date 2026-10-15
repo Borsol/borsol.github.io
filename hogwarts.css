@@ -86,8 +86,12 @@ Der Hierarchieselektor > stellt die Eltern-Kind Beziehung sicher.
   font-size: 12px !important;
   font-weight: bold !important;
   border-top: none !important;
-  padding: 5px 30px !important;
 }
+
+.BewerberWeb .BW-PositionsScreen .LG-DataTableHeader:first-child {
+  padding: 5px 41px !important;
+}
+
 
 /*-----------------------------------Spaltenbreiten------------------------------------*/
 /*
