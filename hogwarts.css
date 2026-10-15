@@ -98,7 +98,7 @@ Der Hierarchieselektor > stellt die Eltern-Kind Beziehung sicher.
 }
 
 /*Tabellenbereich der Zeilen*/
-.BewerberWeb .LG-DataTableWidget {
+.BewerberWeb .BW-PositionsScreen .LG-DataTableWidget {
   height: 700px !important;
   background: #F5F1E8 !important;
 }
