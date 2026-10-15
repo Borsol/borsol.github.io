@@ -240,15 +240,23 @@ tr[title*="Verteidigung"]
 
 .LG-DataTableEvenRow:hover .LG-DataTableCell ::before,
 .LG-DataTableOddRow:hover .LG-DataTableCell ::before{
-  animation: bounce 2s ease-in-out infinite !important;
+  animation: float 1s ease-in-out infinite;
 }
 
-@keyframes bounce {
+@keyframes float {
     0%, 100% {
-      translateY(0);    }
-    50% {
-        transform: translateY(-3px);
+        transform: translateY(0);
     }
+
+    50% {
+        transform: translateY(-2px);
+    }
+}
+
+/*Verhindert, dass beim Bounce etwas abgeschnitten wird*/
+.LG-DataTableCell,
+.LG-DataTableCell > div {
+    overflow: visible !important;
 }
 
 /*-----------------------------------Fußzeile------------------------------------*/
