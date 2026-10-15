@@ -178,13 +178,40 @@ damit eine konsitente Darstellung erreicht werden kann.
 }
 
 /*Icons einfügen*/
-.LG-DataTableEvenRow .LG-DataTableCell:nth-child(1) ::before,
-.LG-DataTableOddRow .LG-DataTableCell:nth-child(1) ::before 
-{
-    content: "\f64f";
+
+tr[title*="Kräuterkunde"] 
+.LG-DataTableCell:first-child > div::before {
+    content: "\f06c";
     font-family: "Font Awesome 5 Free";
     display: inline-block !important;
     font-weight: 900;
+    color: #176B52;
+    margin-right: 8px;
+}
+
+tr[title*="Besenkunde"] 
+.LG-DataTableCell:first-child > div::before {
+    content: "\f458";
+    font-family: "Font Awesome 5 Free";
+    display: inline-block !important; 
+    color: brown;
+    margin-right: 8px;
+}
+
+tr[title*="Zaubereigeschichte"] 
+.LG-DataTableCell:first-child > div::before {
+    content: "\";
+    font-family: "Font Awesome 5 Free";
+    display: inline-block !important; 
+    color: #2c66ab;
+    margin-right: 8px;
+}
+
+tr[title*="Verteidigung"] 
+.LG-DataTableCell:first-child > div::before {
+    content: "\f3ed";
+    font-family: "Font Awesome 5 Free";
+    display: inline-block !important; 
     color: #7A263A;
     margin-right: 8px;
 }
@@ -192,7 +219,7 @@ damit eine konsitente Darstellung erreicht werden kann.
 .LG-DataTableEvenRow .LG-DataTableCell:nth-child(2) ::before,
 .LG-DataTableOddRow .LG-DataTableCell:nth-child(2) ::before 
 {
-    content: "\f458";
+    content: "\f549";
     font-family: "Font Awesome 5 Free";
     display: inline-block !important;
     font-weight: 900;
@@ -211,8 +238,6 @@ damit eine konsitente Darstellung erreicht werden kann.
 }
 
 
-
-
 .LG-DataTableEvenRow:hover .LG-DataTableCell ::before,
 .LG-DataTableOddRow:hover .LG-DataTableCell ::before{
   animation: bounce 2s ease-in-out infinite !important;
@@ -226,8 +251,6 @@ damit eine konsitente Darstellung erreicht werden kann.
     }
 }
 
-
-}
 /*-----------------------------------Fußzeile------------------------------------*/
 /*Das div der Fußzeile*/
 .BW-MainPanel .BW-PositionsScreen > .LG-Section .LG-Section-Content .LG-MaskDataTable-Content .LG-DataTable-Footer 
