@@ -24,13 +24,35 @@
       padding: 0;
     }
 
-    header {
+    /*header {
       background-color: var(--blue);
       color: white;
       text-align: center;
       padding: 3rem 1rem;
       border-bottom: 4px solid var(--gold);
-    }
+    }*/
+
+    header {
+    background:
+        linear-gradient(
+            rgba(23, 37, 54, 0.85),
+            rgba(23, 37, 54, 0.85)
+        ),
+        url("bild.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 280px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: 4px solid var(--gold);
+}
 
     header h1 {
       margin: 0;
@@ -165,17 +187,6 @@
       transition: border 0.2s;
       box-shadow: 0 8px 25px rgba(44, 26, 77, 0.15);
       color: var(--red);
-    }
-
-    .hero {
-    background:
-        linear-gradient(
-            rgba(23,37,54,.75),
-            rgba(23,37,54,.75)
-        ),
-        url('bild.png');
-    background-size: cover;
-    background-position: center;
     }
 
     
