@@ -50,7 +50,7 @@ fetch('jobs.xml')
 
             const qrPlaceholder =card.querySelector('.qr');
             if(url){
-                new QRCode(qrPlaceholder, {text:url, width:40,height:40,colorDark : "#C6A34A",colorLight : "#ffffff"});
+                new QRCode(qrPlaceholder, {text:url, width:40,height:40,colorDark : "#000000",colorLight : "#ffffff"});
 
             }
         }
