@@ -25,7 +25,6 @@ fetch('jobs.xml')
             const location = jobs[i].getElementsByTagName('location')[0]?.textContent || 'Hauptstandort';
             const shortName = jobs[i].getElementsByTagName('shortName')[0]?.textContent || '';
             const url = jobs[i].getElementsByTagName('url')[0]?.textContent || '';
-            const qr = new QRCode(jobs[i].getElementsByTagName('url')[0], {text: window.location.href, width: 80,heigth:80,colorDark : "#000000",colorLight : "#ffffff"});
             //Datum umwandeln          
             const publishedToDate = new Intl.DateTimeFormat('de-DE', {
                 day: '2-digit',
@@ -43,11 +42,17 @@ fetch('jobs.xml')
             <p class="publishToDate">Veröffentlicht bis: ${publishedToDate}</p>
             <p class="shortName">${shortName}</p>
             <a href="${url}" class="btn-bewerben">Jetzt bewerben</a>
-            <img class="qr">"${qr}">
+            <div class="qr"></div>
           `;
 
             // Card dem Grid hinzufügen
             container.appendChild(card);
+
+            const qrPlaceholder =card.querySelector('.qr');
+            if(url){
+                new QRCode(qrPlaceholder, {url, width: 80,height:80,colorDark : "#000000",colorLight : "#ffffff"});
+
+            }
         }
     })
     .catch(error => {
