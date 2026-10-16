@@ -20,14 +20,6 @@ body {
     padding: 0;
 }
 
-/*header {
-      background-color: var(--blue);
-      color: white;
-      text-align: center;
-      padding: 3rem 1rem;
-      border-bottom: 4px solid var(--gold);
-    }*/
-
 header {
     display: flex;
     align-items: stretch;
@@ -37,6 +29,10 @@ header {
 
     min-height: fit-content;
     overflow: hidden;
+}
+
+.header-image img{
+    display:none !important;
 }
 
 @media (min-width: 768px){
@@ -50,13 +46,6 @@ header {
     min-height: 220px;
     overflow: hidden;
     }
-}
-
-.header-image img{
-    display:none !important;
-}
-
-@media (min-width: 768px) {
     .header-image {
         flex: 0 0 35%;
     }
