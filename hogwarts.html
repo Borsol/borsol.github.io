@@ -140,7 +140,7 @@
   <!-- --- FUNKTIONALITÄT (JAVASCRIPT) --- -->
   <script>
     // Funktion zum Laden und Parsen der XML
-    fetch(".jobs.xml")
+    fetch("jobs.xml")
       .then(response => {
         if (!response.ok) {
           throw new Error('Netzwerkantwort war nicht ok');
