@@ -1,22 +1,26 @@
 :root {
-      --blue: #172536; /* Blau */
-      --gold: #C6A34A; /* Gold */
-      --red: #7A263A; /*Rot*/
-      --green: #176B52;/*Grün*/
-      --text-color: #333;
-      --bg-color: #f7f5fa;
-      --card-bg: #ffffff;
-    }
+    --blue: #172536;
+    /* Blau */
+    --gold: #C6A34A;
+    /* Gold */
+    --red: #7A263A;
+    /*Rot*/
+    --green: #176B52;
+    /*Grün*/
+    --text-color: #333;
+    --bg-color: #f7f5fa;
+    --card-bg: #ffffff;
+}
 
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      margin: 0;
-      padding: 0;
-    }
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
 
-    /*header {
+/*header {
       background-color: var(--blue);
       color: white;
       text-align: center;
@@ -24,7 +28,7 @@
       border-bottom: 4px solid var(--gold);
     }*/
 
-    header {
+header {
     display: flex;
     align-items: stretch;
 
@@ -72,132 +76,133 @@
     font-size: 1.3rem;
 }
 
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      letter-spacing: 1px;
-    }
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
 
-    header p {
-      margin: 0.5rem 0 0 0;
-      color: var(--gold);
-      font-style: italic;
-      font-size: 1.2rem;
-    }
+header p {
+    margin: 0.5rem 0 0 0;
+    color: var(--gold);
+    font-style: italic;
+    font-size: 1.2rem;
+}
 
-    main {
-      max-width: 1200px;
-      margin: 3rem auto;
-      padding: 0 1rem;
-    }
+main {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+}
 
-    /* Grid-Layout für die modernen Cards */
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 2rem;
-    }
+/* Grid-Layout für die modernen Cards */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
 
-    /* Card-Styling */
-    .card {
-      background-color: var(--card-bg);
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-      padding: 1.5rem;
-      border-top: 5px solid var(--gold);
-      display: flex;
-      flex-direction: column;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
+/* Card-Styling */
+.card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    border-top: 5px solid var(--gold);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 25px rgba(44, 26, 77, 0.15);
-    }
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(44, 26, 77, 0.15);
+}
 
-    .card h3 {
-      margin-top: 0;
-      color: var(--blue);
-      font-size: 1.4rem;
-    }
+.card h3 {
+    margin-top: 0;
+    color: var(--blue);
+    font-size: 1.4rem;
+}
 
-    .card .location {
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: #666;
-      margin-bottom: 1rem;
-    }
+.card .location {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #666;
+    margin-bottom: 1rem;
+}
 
-    .card .publishToDate {
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: #666;
-      margin-bottom: 1rem;
-    }
+.card .publishToDate {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #666;
+    margin-bottom: 1rem;
+}
 
-    .card .shortName {
-      font-size: 0.95rem;
-      line-height: 1.5;
-      color: #555;
-      flex-grow: 1; /* Drückt den Button nach unten */
-      margin-bottom: 1.5rem;
-    }
+.card .shortName {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #555;
+    flex-grow: 1;
+    /* Drückt den Button nach unten */
+    margin-bottom: 1.5rem;
+}
 
-    .btn-bewerben {
-      display: inline-block;
-      text-align: center;
-      background-color: var(--gold);
-      color: var(--blue);
-      text-decoration: none;
-      font-weight: bold;
-      padding: 0.75rem;
-      border-radius: 6px;
-      transition: background 0.2s;
-    }
+.btn-bewerben {
+    display: inline-block;
+    text-align: center;
+    background-color: var(--gold);
+    color: var(--blue);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.75rem;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
 
-    .btn-bewerben:hover {
-      background-color: var(--red);
-      color: white;
-    }
+.btn-bewerben:hover {
+    background-color: var(--red);
+    color: white;
+}
 
-    .card:has(.btn-bewerben:hover){
-      border-top-color: var(--red);
-    }
+.card:has(.btn-bewerben:hover) {
+    border-top-color: var(--red);
+}
 
-    .error-msg {
-      color: #721c24;
-      background-color: #f8d7da;
-      padding: 1rem;
-      border-radius: 6px;
-      grid-column: 1 / -1;
-      text-align: center;
-    }
+.error-msg {
+    color: #721c24;
+    background-color: #f8d7da;
+    padding: 1rem;
+    border-radius: 6px;
+    grid-column: 1 / -1;
+    text-align: center;
+}
 
+.initiativ-div {
+    display: grid;
+    justify-items: center;
+}
+
+@media (min-width: 768px) {
     .initiativ-div {
-      display:grid;
-      justify-items:center;
+        display: grid;
+        justify-items: left;
     }
-    
-    @media (min-width: 768px) {
-      .initiativ-div {
-        display:grid;
-        justify-items:left;
-      }
-    }  
-    
-    .initiativ{
-      margin-top:2rem;
-  
-      background:var(--blue);
-      color:white;
-  
-      padding:1.25rem 1.5rem;
-      border-radius:12px;
-    }
+}
 
-    a.initiativ {
+.initiativ {
+    margin-top: 2rem;
+
+    background: var(--blue);
+    color: white;
+
+    padding: 1.25rem 1.5rem;
+    border-radius: 12px;
+}
+
+a.initiativ {
     display: block;
     overflow-wrap: break-word;
     background: var(--bg-color);
@@ -210,76 +215,76 @@
     border: 2px solid var(--gold);
     font-size: 1.1rem;
     font-weight: 700;
-      
-    }
-    
-    a.initiativ:hover {
-      border: 2px solid var(--red);
-      transition: border 0.2s;
-      box-shadow: 0 8px 25px rgba(44, 26, 77, 0.15);
-      color: var(--red);
-    }
 
-    .footer-motto {
+}
+
+a.initiativ:hover {
+    border: 2px solid var(--red);
+    transition: border 0.2s;
+    box-shadow: 0 8px 25px rgba(44, 26, 77, 0.15);
+    color: var(--red);
+}
+
+.footer-motto {
     text-align: center;
     color: var(--gold);
 
     font-style: italic;
     padding-bottom: 20px;
-    }
-    
-    footer {
+}
+
+footer {
     background: var(--blue);
     color: white;
     margin-top: 80px;
     border-top: 4px solid var(--gold);
-  }
+}
 
-  .footer-content {
-      max-width: 1200px;
-      margin: 0 auto;
-  
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  
-      gap: 40px;
-  
-      padding: 50px 30px;
-  }
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
 
-  .footer-column {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 40px;
+
+    padding: 50px 30px;
+}
+
+.footer-column {
     margin-left: 10px;
-  }
-  
-  .footer-column h3 {
-      color: var(--gold);
-      margin-bottom: 15px;
-      font-size: 1.1rem;
-  }
-  
-  .footer-column p,
-  .footer-column a {
-      display: block;
-  
-      color: #e0e0e0;
-      text-decoration: none;
-  
-      margin-bottom: 10px;
-  
-      transition: color .2s ease;
-  }
-  
-  .footer-column a:hover {
-      color: var(--gold);
-  }
-  
-  .footer-bottom {
-      text-align: center;
-  
-      padding: 20px;
-  
-      border-top: 1px solid rgba(255,255,255,.15);
-  
-      color: #bfbfbf;
-      font-size: .9rem;
-  }
+}
+
+.footer-column h3 {
+    color: var(--gold);
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.footer-column p,
+.footer-column a {
+    display: block;
+
+    color: #e0e0e0;
+    text-decoration: none;
+
+    margin-bottom: 10px;
+
+    transition: color .2s ease;
+}
+
+.footer-column a:hover {
+    color: var(--gold);
+}
+
+.footer-bottom {
+    text-align: center;
+
+    padding: 20px;
+
+    border-top: 1px solid rgba(255, 255, 255, .15);
+
+    color: #bfbfbf;
+    font-size: .9rem;
+}
