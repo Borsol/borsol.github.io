@@ -25,7 +25,7 @@ fetch('jobs.xml')
             const location = jobs[i].getElementsByTagName('location')[0]?.textContent || 'Hauptstandort';
             const shortName = jobs[i].getElementsByTagName('shortName')[0]?.textContent || '';
             const url = jobs[i].getElementsByTagName('url')[0]?.textContent || '';
-            const qr = new QRCode(url, {text: window.location.href, width: 80,heigth:80,colorDark : "#000000",colorLight : "#ffffff"});
+            const qr = new QRCode(jobs[i].getElementsByTagName('url')[0], {text: window.location.href, width: 80,heigth:80,colorDark : "#000000",colorLight : "#ffffff"});
             //Datum umwandeln          
             const publishedToDate = new Intl.DateTimeFormat('de-DE', {
                 day: '2-digit',
