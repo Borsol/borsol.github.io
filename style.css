@@ -37,14 +37,8 @@ header {
 
 @media (min-width: 768px){
     header {
-    display: flex;
-    align-items: stretch;
+        min-height: 220px;
 
-    background: var(--blue);
-    border-bottom: 4px solid var(--gold);
-
-    min-height: 220px;
-    overflow: hidden;
     }
     .header-image {
         flex: 0 0 35%;
