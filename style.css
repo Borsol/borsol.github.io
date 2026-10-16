@@ -208,7 +208,7 @@ main {
 }
 
 /* Deine bestehenden Text-Styles bleiben unverändert */
-.card h3 { margin-top: 0; color: var(--blue); font-size: 1.4rem; padding-right: 75px;}
+.card h3 { margin-top: 0; color: var(--blue); font-size: 1.4rem;}
 .card .location, .card .publishToDate { font-size: 0.85rem; text-transform: uppercase; color: #666; margin-bottom: 0.5rem; }
 .card .shortName { font-size: 0.95rem; line-height: 1.5; color: #555; flex-grow: 1; margin-bottom: 1rem; }
 
