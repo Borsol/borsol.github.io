@@ -155,7 +155,7 @@ main {
 .card-back {
     background-color: var(--card-bg, #ffffff);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    border-top: 5px solid var(--blue);
+    border-top: 5px solid var(--red);
     transform: rotateY(180deg); /* Startet bereits umgedreht */
     align-items: center; /* Zentriert den großen QR-Code */
     justify-content: center;
