@@ -60,12 +60,12 @@ fetch('jobs.xml')
 
             const smallQrPlaceholder =card.querySelector('.small-qr');
             if(url){
-                new QRCode(smallQrPlaceholder, {text:url, width:40,height:40,colorDark : "#000000",colorLight : "#ffffff"});
+                new QRCode(smallQrPlaceholder, {text:url, width:50,height:50,colorDark : "#000000",colorLight : "#ffffff"});
             }
             
             const largeQrPlaceholder =card.querySelector('.large-qr');
             if(url){
-                new QRCode(largeQrPlaceholder, {text:url, width:100,height:100,colorDark : "#000000",colorLight : "#ffffff"});
+                new QRCode(largeQrPlaceholder, {text:url, width:120,height:120,colorDark : "#000000",colorLight : "#ffffff"});
             }
 
             smallQrPlaceholder.addEventListener('click', function(e) {
