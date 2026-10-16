@@ -1,4 +1,3 @@
-src = "https://cloudflare.com";
 fetch('jobs.xml')
     .then(response => {
         if (!response.ok) {
