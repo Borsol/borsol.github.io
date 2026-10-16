@@ -34,13 +34,57 @@
 
     header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 40px 80px;
+    align-items: stretch;
 
     background: var(--blue);
     border-bottom: 4px solid var(--gold);
+
+    min-height: 220px;
+    overflow: hidden;
+}
+
+.header-image {
+    flex: 0 0 35%;
+}
+
+.header-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.header-content {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 40px 60px;
+}
+
+.header-content h1 {
+    margin: 0;
+    color: white;
+    font-size: 3rem;
+}
+
+.header-content p {
+    margin-top: 12px;
+    color: var(--gold);
+    font-style: italic;
+    font-size: 1.3rem;
+}
+``
+
+    .crest {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      filter: drop-shadow(0 4px 12px rgba(0,0,0,.3));
     }
 
     header h1 {
@@ -184,8 +228,9 @@
 <body>
 
   <header>
-    <h1>Akademie für Zauberei</h1>
-    <p>Gestalten Sie die magische Zukunft der nächsten Generation</p>
+    <div><h1>Akademie für Zauberei</h1>
+    <p>Gestalten Sie die magische Zukunft der nächsten Generation</p></div>
+    <div>url("bilder/hogwarts.jpg")</div>
   </header>
 
   <main>
