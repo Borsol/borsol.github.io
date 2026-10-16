@@ -66,7 +66,16 @@ fetch('jobs.xml')
             const largeQrPlaceholder =card.querySelector('.large-qr');
             if(url){
                 new QRCode(largeQrPlaceholder, {text:url, width:100,height:100,colorDark : "#000000",colorLight : "#ffffff"});
-            }           
+            }
+
+            smallQrPlaceholder.addEventListener('click', function(e) {
+                e.stopPropagation(); // Verhindert ungewollte Nebeneffekte
+                card.classList.add('is-flipped');
+
+            card.querySelector('.btn-zurueck').addEventListener('click', function(e) {
+            card.classList.remove('is-flipped');
+        });
+    });
         }
     })
     .catch(error => {
