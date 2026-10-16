@@ -44,6 +44,7 @@ fetch('jobs.xml')
             <p class="publishToDate">Veröffentlicht bis: ${publishedToDate}</p>
             <p class="shortName">${shortName}</p>
             <a href="${url}" class="btn-bewerben">Jetzt bewerben</a>
+            <div class="qr">"${qr}"</div>
           `;
 
             // Card dem Grid hinzufügen
