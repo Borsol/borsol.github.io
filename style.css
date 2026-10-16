@@ -41,7 +41,7 @@ header {
 
     }
     .header-image {
-        display:block;
+        display:flex;
         flex: 0 0 35%;
     }
 
