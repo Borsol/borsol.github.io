@@ -321,8 +321,8 @@
             <ul>
                 <li><a href="#">Aktuelle Stellenangebote</a></li>
                 <li><a href="https://hannit.pi-asp.de/bewerber-web/?companyEid=0001&tenant=27700&lang=D&canShare=true&Uid=FC7584FC331BDD9B674EEB07611A4FDC#position,id=d33fb936-94c6-499a-8a7c-9f6acdfbdbf0">Initiativbewerbung</a></li>
-                <li><a href="#">Referendariat onclick="Bieten wir zuzeit nicht an"</a></li>
-                <li><a href="#">Praktikum onclick="Bieten wir zuzeit nicht an"</a></li>
+                <li><a href="#" class="disabled-link">Referendariat</a></li>
+                <li><a href="#" class="disabled-link">Praktikum</a></li>
             </ul>
         </div>
 
@@ -406,6 +406,13 @@
           </div>
         `;
       });
+    document.querySelectorAll('.disabled-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+    
+            alert('Dieser Bereich befindet sich aktuell noch in Vorbereitung. Bitte schauen Sie später erneut vorbei.');
+        });
+    });
   </script>
 </body>
 </html>
