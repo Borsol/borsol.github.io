@@ -2,13 +2,195 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>JSON Daten anzeigen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bewerberportal | Zaubereiakademie</title>
+  <style>
+    /* --- MODERNES & MAGISCHES DESIGN (CSS) --- */
+    :root {
+      --primary-color: #2c1a4d; /* Magisches Dunkellila */
+      --secondary-color: #d4af37; /* Zauberhaftes Gold */
+      --text-color: #333;
+      --bg-color: #f7f5fa;
+      --card-bg: #ffffff;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+      border-bottom: 4px solid var(--secondary-color);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      margin: 0.5rem 0 0 0;
+      color: var(--secondary-color);
+      font-style: italic;
+      font-size: 1.2rem;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    /* Grid-Layout für die modernen Cards */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    /* Card-Styling */
+    .card {
+      background-color: var(--card-bg);
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      padding: 1.5rem;
+      border-top: 5px solid var(--primary-color);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(44, 26, 77, 0.15);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: var(--primary-color);
+      font-size: 1.4rem;
+    }
+
+    .card .abteilung {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #666;
+      margin-bottom: 1rem;
+    }
+
+    .card .beschreibung {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: #555;
+      flex-grow: 1; /* Drückt den Button nach unten */
+      margin-bottom: 1.5rem;
+    }
+
+    .btn-bewerben {
+      display: inline-block;
+      text-align: center;
+      background-color: var(--secondary-color);
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.75rem;
+      border-radius: 6px;
+      transition: background 0.2s;
+    }
+
+    .btn-bewerben:hover {
+      background-color: #bfa030;
+    }
+
+    .error-msg {
+      color: #721c24;
+      background-color: #f8d7da;
+      padding: 1rem;
+      border-radius: 6px;
+      grid-column: 1 / -1;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-<p>Hier steht ein Test</p> 
-  <!-- Hier werden die Daten später eingefügt -->
-  <div id="daten-container">Lade Daten...</div>
 
-  <script src="script.js"></script>
+  <header>
+    <h1>Großherzogliche Akademie für Zauberkünste</h1>
+    <p>Gestalten Sie die magische Zukunft der nächsten Generation</p>
+  </header>
+
+  <main>
+    <h2>Aktuelle Stellenausschreibungen</h2>
+    
+    <!-- Hier fügt das JavaScript die XML-Daten als Cards ein -->
+    <div id="ausschreibungen-container" class="grid-container">
+      <p>Die magischen Dokumente werden geladen...</p>
+    </div>
+  </main>
+
+  <!-- --- FUNKTIONALITÄT (JAVASCRIPT) --- -->
+  <script>
+    // Funktion zum Laden und Parsen der XML
+    fetch(".jobs.xml")
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Netzwerkantwort war nicht ok');
+        }
+        return response.text();
+      })
+      .then(xmlString => {
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(xmlString, "application/xml");
+        const container = document.getElementById('ausschreibungen-container');
+        container.innerHTML = ''; // Lade-Text entfernen
+
+        // Alle <job>-Elemente aus der XML holen
+        const jobs = xmlDoc.getElementsByTagName('job');
+
+        if(jobs.length === 0) {
+          container.innerHTML = '<p>Aktuell sind keine Stellen offen.</p>';
+          return;
+        }
+
+        // Schleife durch alle Jobs
+        for (let i = 0; i < jobs.length; i++) {
+          const titel = jobs[i].getElementsByTagName('titel')[0]?.textContent || 'Kein Titel';
+          const abteilung = jobs[i].getElementsByTagName('abteilung')[0]?.textContent || 'Allgemein';
+          const beschreibung = jobs[i].getElementsByTagName('beschreibung')[0]?.textContent || '';
+
+          // HTML für eine einzelne Card erstellen
+          const card = document.createElement('div');
+          card.className = 'card';
+
+          card.innerHTML = `
+            <h3>${titel}</h3>
+            <div class="abteilung">Fachbereich: ${abteilung}</div>
+            <p class="beschreibung">${beschreibung}</p>
+            <a href="#" class="btn-bewerben" onclick="alert('Bewerbungsformular für ${titel} öffnet sich bald...')">Jetzt bewerben</a>
+          `;
+
+          // Card dem Grid hinzufügen
+          container.appendChild(card);
+        }
+      })
+      .catch(error => {
+        console.error('Fehler:', error);
+        document.getElementById('ausschreibungen-container').innerHTML = `
+          <div class="error-msg">
+            Die Stellenausschreibungen konnten nicht aus den Archiven geladen werden. (Fehler: XML fehlt oder CORS-Problem)
+          </div>
+        `;
+      });
+  </script>
+
 </body>
 </html>
