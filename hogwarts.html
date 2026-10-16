@@ -7,8 +7,10 @@
   <style>
     /* --- MODERNES & MAGISCHES DESIGN (CSS) --- */
     :root {
-      --primary-color: #2c1a4d; /* Magisches Dunkellila */
-      --secondary-color: #d4af37; /* Zauberhaftes Gold */
+      --blue: #172536; /* Blau */
+      --gold: #C6A34A; /* Gold */
+      --red: #7A263A; /*Rot*/
+      --green: #176B52;/*Grün*/
       --text-color: #333;
       --bg-color: #f7f5fa;
       --card-bg: #ffffff;
@@ -23,11 +25,11 @@
     }
 
     header {
-      background-color: var(--primary-color);
+      background-color: var(--blue);
       color: white;
       text-align: center;
       padding: 3rem 1rem;
-      border-bottom: 4px solid var(--secondary-color);
+      border-bottom: 4px solid var(--gold);
     }
 
     header h1 {
@@ -38,7 +40,7 @@
 
     header p {
       margin: 0.5rem 0 0 0;
-      color: var(--secondary-color);
+      color: var(--gold);
       font-style: italic;
       font-size: 1.2rem;
     }
@@ -62,7 +64,7 @@
       border-radius: 12px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
       padding: 1.5rem;
-      border-top: 5px solid var(--primary-color);
+      border-top: 5px solid var(--blue);
       display: flex;
       flex-direction: column;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -75,11 +77,11 @@
 
     .card h3 {
       margin-top: 0;
-      color: var(--primary-color);
+      color: var(--blue);
       font-size: 1.4rem;
     }
 
-    .card .abteilung {
+    .card .location {
       font-size: 0.85rem;
       text-transform: uppercase;
       letter-spacing: 1px;
@@ -87,7 +89,15 @@
       margin-bottom: 1rem;
     }
 
-    .card .beschreibung {
+    .card .publishToDate {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #666;
+      margin-bottom: 1rem;
+    }
+
+    .card .shortName {
       font-size: 0.95rem;
       line-height: 1.5;
       color: #555;
@@ -98,8 +108,8 @@
     .btn-bewerben {
       display: inline-block;
       text-align: center;
-      background-color: var(--secondary-color);
-      color: var(--primary-color);
+      background-color: var(--gold);
+      color: var(--blue);
       text-decoration: none;
       font-weight: bold;
       padding: 0.75rem;
@@ -124,7 +134,7 @@
 <body>
 
   <header>
-    <h1>Großherzogliche Akademie für Zauberkünste</h1>
+    <h1>Akademie für Zauberei</h1>
     <p>Gestalten Sie die magische Zukunft der nächsten Generation</p>
   </header>
 
@@ -133,8 +143,14 @@
     
     <!-- Hier fügt das JavaScript die XML-Daten als Cards ein -->
     <div id="ausschreibungen-container" class="grid-container">
-      <p>Die magischen Dokumente werden geladen...</p>
+      <p>Die magischen Ausschreibungen werden geladen...</p>
     </div>
+
+    <div>
+      <p>Keine passende Veröffentlichung gefunden? Schau doch spontan mit deinem Besen vorbei!</p>
+      <a href="https://hannit.pi-asp.de/bewerber-web/?companyEid=0001&tenant=27700&lang=D&canShare=true&Uid=FC7584FC331BDD9B674EEB07611A4FDC#position,id=d33fb936-94c6-499a-8a7c-9f6acdfbdbf0">Zur Initiativbewerbung</a>
+    </div>
+
   </main>
 
   <!-- --- FUNKTIONALITÄT (JAVASCRIPT) --- -->
@@ -143,7 +159,7 @@
     fetch("jobs.xml")
       .then(response => {
         if (!response.ok) {
-          throw new Error('Netzwerkantwort war nicht ok');
+          throw new Error('Der Zaubereikristall muss neu aufgeladen werden.');
         }
         return response.text();
       })
@@ -163,19 +179,28 @@
 
         // Schleife durch alle Jobs
         for (let i = 0; i < jobs.length; i++) {
-          const titel = jobs[i].getElementsByTagName('titel')[0]?.textContent || 'Kein Titel';
-          const abteilung = jobs[i].getElementsByTagName('abteilung')[0]?.textContent || 'Allgemein';
-          const beschreibung = jobs[i].getElementsByTagName('beschreibung')[0]?.textContent || '';
+          const title = jobs[i].getElementsByTagName('title')[0]?.textContent || 'Kein Titel';
+          const location = jobs[i].getElementsByTagName('location')[0]?.textContent || 'Hauptstandort';
+          const shortName = jobs[i].getElementsByTagName('shortName')[0]?.textContent || '';
+          const url = jobs[i].getElementsByTagName('url')[0]?.textContent || '';
+
+          //Datum umwandeln          
+          const publishedToDate = new Intl.DateTimeFormat('de-DE', {
+            day: '2-digit',
+            month: '2-digit',
+            year: 'numeric'
+          }).format(new Date((jobs[i].getElementsByTagName('publishToDate')[0]?.textContent).replace(/\./g, '-')));
 
           // HTML für eine einzelne Card erstellen
           const card = document.createElement('div');
           card.className = 'card';
 
           card.innerHTML = `
-            <h3>${titel}</h3>
-            <div class="abteilung">Fachbereich: ${abteilung}</div>
-            <p class="beschreibung">${beschreibung}</p>
-            <a href="#" class="btn-bewerben" onclick="alert('Bewerbungsformular für ${titel} öffnet sich bald...')">Jetzt bewerben</a>
+            <h3>${title}</h3>
+            <div class="location">Standort: ${location}</div>
+            <p class="publishToDate">Veröffentlicht bis: ${publishedToDate}</p>
+            <p class="shortName">${shortName}</p>
+            <a href="${url}" class="btn-bewerben">Jetzt bewerben</a>
           `;
 
           // Card dem Grid hinzufügen
@@ -186,11 +211,10 @@
         console.error('Fehler:', error);
         document.getElementById('ausschreibungen-container').innerHTML = `
           <div class="error-msg">
-            Die Stellenausschreibungen konnten nicht aus den Archiven geladen werden. (Fehler: XML fehlt oder CORS-Problem)
+            Die Stellenausschreibungen konnten nicht geladen werden. (Fehler: XML fehlt oder CORS-Problem)
           </div>
         `;
       });
   </script>
-
 </body>
 </html>
