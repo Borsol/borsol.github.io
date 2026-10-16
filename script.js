@@ -37,22 +37,36 @@ fetch('jobs.xml')
             card.className = 'card';
 
             card.innerHTML = `
-            <h3>${title}</h3>
-            <div class="location">Standort: ${location}</div>
-            <p class="publishToDate">Veröffentlicht bis: ${publishedToDate}</p>
-            <p class="shortName">${shortName}</p>
-            <a href="${url}" class="btn-bewerben">Jetzt bewerben</a>
-            <div class="qr"></div>
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>${title}</h3>
+                    <div class="location">Standort: ${location}</div>
+                    <p class="publishToDate">Veröffentlicht bis: ${publishedToDate}</p>
+                    <p class="shortName">${shortName}</p>
+                    <a href="${url}" class="btn-bewerben">Jetzt bewerben</a>
+                    <div class="qr small-qr"></div>
+                </div>
+                <div class="card-back">
+                    <h3>${title}</h3>
+                    <p>Scannen zum Bewerben:</p>
+                    <div class="qr large-qr"></div>
+                    <button class="btn-zurueck">Zurück zur Übersicht</button>
+                </div>
+            </div>
           `;
 
             // Card dem Grid hinzufügen
             container.appendChild(card);
 
-            const qrPlaceholder =card.querySelector('.qr');
+            const smallQrPlaceholder =card.querySelector('.small-qr');
             if(url){
-                new QRCode(qrPlaceholder, {text:url, width:40,height:40,colorDark : "#000000",colorLight : "#ffffff"});
-
+                new QRCode(smallQrPlaceholder, {text:url, width:40,height:40,colorDark : "#000000",colorLight : "#ffffff"});
             }
+            
+            const largeQrPlaceholder =card.querySelector('.large-qr');
+            if(url){
+                new QRCode(largeQrPlaceholder, {text:url, width:100,height:100,colorDark : "#000000",colorLight : "#ffffff"});
+            }           
         }
     })
     .catch(error => {
