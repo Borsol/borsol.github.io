@@ -43,6 +43,7 @@ header {
     .header-image {
         display:flex;
         flex: 0 0 35%;
+        padding: 5px;
     }
 
     .header-image img {
