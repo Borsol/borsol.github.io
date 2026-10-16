@@ -32,7 +32,7 @@ header {
 }
 
 .header-image img{
-    display:none !important;
+    display:none;
 }
 
 @media (min-width: 768px){
