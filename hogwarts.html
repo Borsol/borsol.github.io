@@ -147,14 +147,14 @@
 
     a.initiativ {
     display: block;
-    background: var(--bg-color)
+    background: var(--bg-color);
     width: 30%;
     color: var(--gold);
     text-decoration: none;
     padding: 20px 24px;
     margin-top: 25px;
     border-radius: 12px;
-    border: 1px solid var(--gold);
+    border: 2px solid var(--gold);
     font-size: 1.1rem;
     font-weight: 700;
       
@@ -167,9 +167,9 @@
     }
     
     a.initiativ:hover {
-      border-color: var(--red);
-
-    transform: translateY(-2px);
+      border: 2px solid var(--red);
+      transition: border 0.2s;
+      box-shadow: 0 8px 25px rgba(44, 26, 77, 0.15);
     }
 
     
