@@ -45,8 +45,7 @@ fetch('jobs.xml')
                     <p class="shortName">${shortName}</p>
                     <a href="${url}" class="btn-bewerben">Jetzt bewerben</a>
                     <div class="qr small-qr">
-                    <span class="hover-text">
-                    Klicke hier für den QR-Code.</span>
+                    <span class="hover-text">Klicke hier für den QR-Code.</span>
                     </div>
                 </div>
                 <div class="card-back">
