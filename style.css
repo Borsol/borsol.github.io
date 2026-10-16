@@ -108,70 +108,110 @@ main {
 }
 
 /* Card-Styling */
+/* Das Grid-Element (Perspektive für den 3D-Effekt) */
 .card {
+    background-color: transparent; /* Hintergrund wird jetzt vom Inner-Element übernommen */
+    box-shadow: none;
+    perspective: 1000px; /* Ermöglicht den 3D-Effekt */
+    height: 350px; /* Feste Höhe, damit die Karte beim Drehen stabil bleibt */
+}
+
+/* Der Container, der sich tatsächlich dreht */
+.card-inner {
     position: relative;
-    background-color: var(--card-bg);
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d; /* Wichtig für 3D-Ebenen */
+}
+
+/* Wenn die Klasse aktiv ist, dreht sich die Karte um 180 Grad */
+.card.is-flipped .card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Gemeinsame Stile für Vorder- und Rückseite */
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Versteckt die Rückseite, wenn sie weggedreht ist */
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     padding: 1.5rem;
-    border-top: 5px solid var(--gold);
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(44, 26, 77, 0.15);
+/* Design der Vorderseite */
+.card-front {
+    background-color: var(--card-bg, #ffffff);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-top: 5px solid var(--gold);
 }
 
-.card h3 {
-    margin-top: 0;
-    color: var(--blue);
-    font-size: 1.4rem;
+/* Design der Rückseite */
+.card-back {
+    background-color: var(--card-bg, #ffffff);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-top: 5px solid var(--blue);
+    transform: rotateY(180deg); /* Startet bereits umgedreht */
+    align-items: center; /* Zentriert den großen QR-Code */
+    justify-content: center;
 }
 
-.card .location {
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #666;
-    margin-bottom: 1rem;
+/* Kleiner QR-Code oben rechts (Nur auf Desktop) */
+.card .small-qr {
+    display: none;
 }
 
-.card .publishToDate {
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #666;
-    margin-bottom: 1rem;
+@media (min-width: 768px) {
+    .card .small-qr {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background: white;
+        padding: 4px;
+        border: 2px solid var(--gold);
+        border-radius: 4px;
+        cursor: pointer; /* Zeigt an, dass man klicken kann */
+    }
 }
 
-.card .shortName {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    color: #555;
-    flex-grow: 1;
-    /* Drückt den Button nach unten */
-    margin-bottom: 1.5rem;
-}
-
-.card .qr {
-    position: absolute;
-    top: 15px;    /* Abstand nach oben */
-    right: 15px;  /* Abstand nach rechts */
-    
+/* Großer QR-Code auf der Rückseite */
+.card .large-qr {
     background: white;
-    padding: 6px; /* Kleiner weißer Rahmen um den Code */
-    border: 2px solid var(--gold); /* Passt perfekt zur Akademie */
-    border-radius: 4px;
+    padding: 10px;
+    border: 3px solid var(--blue);
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
 }
 
 .card .qr img {
     display: block;
-    width: 100%;
-    height: auto;
 }
+
+/* Button zum Zurückdrehen */
+.btn-zurueck {
+    background: none;
+    border: 1px solid #999;
+    color: #666;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+.btn-zurueck:hover {
+    background: #f5f5f5;
+}
+
+/* Deine bestehenden Text-Styles bleiben unverändert */
+.card h3 { margin-top: 0; color: var(--blue); font-size: 1.4rem; padding-right: 75px;}
+.card .location, .card .publishToDate { font-size: 0.85rem; text-transform: uppercase; color: #666; margin-bottom: 0.5rem; }
+.card .shortName { font-size: 0.95rem; line-height: 1.5; color: #555; flex-grow: 1; margin-bottom: 1rem; }
+
 
 .btn-bewerben {
     display: inline-block;
