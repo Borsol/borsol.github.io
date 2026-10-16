@@ -46,7 +46,6 @@ header {
 @media (min-width: 768px) {
     .header-image {
         flex: 0 0 35%;
-        width: 35%;
     }
 
     .header-image img {
