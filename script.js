@@ -71,13 +71,14 @@ fetch('jobs.xml')
             }
 
             smallQrPlaceholder.addEventListener('click', function(e) {
-                e.stopPropagation(); // Verhindert ungewollte Nebeneffekte
+                e.stopPropagation();
                 card.classList.add('is-flipped');
-
+            });
+            
             card.querySelector('.btn-zurueck').addEventListener('click', function(e) {
-            card.classList.remove('is-flipped');
-        });
-    });
+                e.stopPropagation();
+                card.classList.remove('is-flipped');
+            });
         }
     })
     .catch(error => {
