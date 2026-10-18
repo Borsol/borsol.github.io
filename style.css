@@ -206,7 +206,7 @@ main {
 .div-box p {
   margin: 0;
   text-align: center; /* Richtet den Text edel zum QR-Code hin aus */
-  self-align: center;
+  align-self: center;
 }
 
 .hover-text {
