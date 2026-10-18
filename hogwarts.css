@@ -203,6 +203,13 @@ damit eine konsitente Darstellung erreicht werden kann.
   transition: all .2 ease !important;
 }
 
+.LG-DataTableEvenRow:hover .LG-DataTableCell:first-child,
+.LG-DataTableOddRow:hover .LG-DataTableCell:first-child
+{
+    border-left: 6px solid #27c94f !important;
+}
+
+
 /*Stylen der einzelnen Zellen pro Spalte bspw. andere Schriftfarbe*/
 .LG-DataTableCell:nth-child(2),
 .LG-DataTableCell:nth-child(4) 
