@@ -203,12 +203,33 @@ damit eine konsitente Darstellung erreicht werden kann.
   transition: all .2 ease !important;
 }
 
+tr[title*="Kräuterkunde"]
 .LG-DataTableEvenRow:hover .LG-DataTableCell:first-child,
 .LG-DataTableOddRow:hover .LG-DataTableCell:first-child
 {
-    border-left: 6px solid #27c94f !important;
+    border-left: 6px solid #176B52 !important;
 }
 
+tr[title*="Besenkunde"]
+.LG-DataTableEvenRow:hover .LG-DataTableCell:first-child,
+.LG-DataTableOddRow:hover .LG-DataTableCell:first-child
+{
+    border-left: 6px solid brown !important;
+}
+
+tr[title*="Zaubereigeschichte"]
+.LG-DataTableEvenRow:hover .LG-DataTableCell:first-child,
+.LG-DataTableOddRow:hover .LG-DataTableCell:first-child
+{
+    border-left: 6px solid #2c66ab !important;
+}
+
+tr[title*="Verteidigung"]
+.LG-DataTableEvenRow:hover .LG-DataTableCell:first-child,
+.LG-DataTableOddRow:hover .LG-DataTableCell:first-child
+{
+    border-left: 6px solid #7A263A !important;
+}
 
 /*Stylen der einzelnen Zellen pro Spalte bspw. andere Schriftfarbe*/
 .LG-DataTableCell:nth-child(2),
