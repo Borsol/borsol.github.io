@@ -178,6 +178,10 @@ main {
         border-radius: 4px;
         cursor: pointer; /* Zeigt an, dass man klicken kann */
     }
+
+    .card .small-qr:hover {
+        border-color: var(--red);
+    }
 }
 
 /* Großer QR-Code auf der Rückseite */
