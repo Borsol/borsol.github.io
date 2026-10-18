@@ -198,6 +198,10 @@ main {
     display: block;
 }
 
+.div-box{
+    display: grid;
+}
+
 .hover-text {
   opacity: 0;
   visibility: hidden;
