@@ -31,17 +31,18 @@ header {
     overflow: hidden;
 }
 
-.header-image img{
-    display:none;
+.header-image img {
+    display: none;
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
     header {
         min-height: 220px;
 
     }
+
     .header-image {
-        display:flex;
+        display: flex;
         flex: 0 0 35%;
         padding: 10px;
         border-radius: 10px;
@@ -51,7 +52,7 @@ header {
         width: 100%;
         height: 100%;
         border-radius: 10px;
-    
+
         object-fit: cover;
         object-position: center;
         display: block;
@@ -110,10 +111,13 @@ main {
 /* Card-Styling */
 /* Das Grid-Element (Perspektive für den 3D-Effekt) */
 .card {
-    background-color: transparent; /* Hintergrund wird jetzt vom Inner-Element übernommen */
+    background-color: transparent;
+    /* Hintergrund wird jetzt vom Inner-Element übernommen */
     box-shadow: none;
-    perspective: 1000px; /* Ermöglicht den 3D-Effekt */
-    height: 350px; /* Feste Höhe, damit die Karte beim Drehen stabil bleibt */
+    perspective: 1000px;
+    /* Ermöglicht den 3D-Effekt */
+    height: 350px;
+    /* Feste Höhe, damit die Karte beim Drehen stabil bleibt */
 }
 
 /* Der Container, der sich tatsächlich dreht */
@@ -123,7 +127,8 @@ main {
     height: 100%;
     text-align: left;
     transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-    transform-style: preserve-3d; /* Wichtig für 3D-Ebenen */
+    transform-style: preserve-3d;
+    /* Wichtig für 3D-Ebenen */
 }
 
 /* Wenn die Klasse aktiv ist, dreht sich die Karte um 180 Grad */
@@ -132,12 +137,13 @@ main {
 }
 
 /* Gemeinsame Stile für Vorder- und Rückseite */
-.card-front, 
+.card-front,
 .card-back {
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden; /* Versteckt die Rückseite, wenn sie weggedreht ist */
+    backface-visibility: hidden;
+    /* Versteckt die Rückseite, wenn sie weggedreht ist */
     border-radius: 12px;
     padding: 1.5rem;
     box-sizing: border-box;
@@ -157,8 +163,10 @@ main {
     background-color: var(--card-bg, #ffffff);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     border-top: 5px solid var(--red);
-    transform: rotateY(180deg); /* Startet bereits umgedreht */
-    align-items: center; /* Zentriert den großen QR-Code */
+    transform: rotateY(180deg);
+    /* Startet bereits umgedreht */
+    align-items: center;
+    /* Zentriert den großen QR-Code */
     justify-content: left;
 }
 
@@ -177,7 +185,8 @@ main {
         padding: 4px;
         border: 2px solid var(--gold);
         border-radius: 4px;
-        cursor: pointer; /* Zeigt an, dass man klicken kann */
+        cursor: pointer;
+        /* Zeigt an, dass man klicken kann */
     }
 
     .card .small-qr:hover {
@@ -198,33 +207,34 @@ main {
     display: block;
 }
 
-.div-box{
+.div-box {
     display: grid;
     grid-template-columns: auto 1fr;
 }
 
 .div-box p {
-  margin: 0;
-  text-align: center; /* Richtet den Text edel zum QR-Code hin aus */
-  align-self: center;
+    margin: 0;
+    text-align: center;
+    /* Richtet den Text edel zum QR-Code hin aus */
+    align-self: center;
 }
 
 .hover-text {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: #333;
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
 }
 
 .small-qr:hover .hover-text {
-  opacity: 1;
-  visibility: visible;
+    opacity: 1;
+    visibility: visible;
 }
 
 
@@ -238,14 +248,33 @@ main {
     cursor: pointer;
     font-size: 0.8rem;
 }
+
 .btn-zurueck:hover {
     background: #f5f5f5;
 }
 
 /* Deine bestehenden Text-Styles bleiben unverändert */
-.card h3 { margin-top: 0; color: var(--blue); font-size: 1.4rem;}
-.card .location, .card .publishToDate { font-size: 0.85rem; text-transform: uppercase; color: #666; margin-bottom: 0.5rem; }
-.card .shortName { font-size: 0.95rem; line-height: 1.5; color: #555; flex-grow: 1; margin-bottom: 1rem; }
+.card h3 {
+    margin-top: 0;
+    color: var(--blue);
+    font-size: 1.4rem;
+}
+
+.card .location,
+.card .publishToDate {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.card .shortName {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #555;
+    flex-grow: 1;
+    margin-bottom: 1rem;
+}
 
 
 .btn-bewerben {
