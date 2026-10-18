@@ -200,12 +200,13 @@ main {
 
 .div-box{
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: auto 1fr;
 }
 
 .div-box p {
   margin: 0;
-  text-align: right; /* Richtet den Text edel zum QR-Code hin aus */
+  text-align: center; /* Richtet den Text edel zum QR-Code hin aus */
+  self-align: center;
 }
 
 .hover-text {
