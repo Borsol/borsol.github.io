@@ -51,7 +51,7 @@ fetch('jobs.xml')
                 <div class="card-back">
                     <h3>${title}</h3>
                     <div class="div-box">
-                    <p>Scannen zum Bewerben:</p>
+                    <p>Scannen zum Bewerben</p>
                     <div class="qr large-qr"></div>
                     </div>
                     <button class="btn-zurueck">Zurück zur Übersicht</button>
