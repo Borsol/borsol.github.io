@@ -161,6 +161,12 @@ main {
     justify-content: center;
 }
 
+.card-back h3{
+    align-self: stretch;
+    text-align: left;
+    margin-top: 0;
+}
+
 /* Kleiner QR-Code oben rechts (Nur auf Desktop) */
 .card .small-qr {
     display: none;
