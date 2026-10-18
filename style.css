@@ -132,7 +132,8 @@ main {
 }
 
 /* Gemeinsame Stile für Vorder- und Rückseite */
-.card-front, .card-back {
+.card-front, 
+.card-back {
     position: absolute;
     width: 100%;
     height: 100%;
