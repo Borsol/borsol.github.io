@@ -159,7 +159,7 @@ main {
     border-top: 5px solid var(--red);
     transform: rotateY(180deg); /* Startet bereits umgedreht */
     align-items: center; /* Zentriert den großen QR-Code */
-    justify-content: center;
+    justify-content: left;
 }
 
 /* Kleiner QR-Code oben rechts (Nur auf Desktop) */
