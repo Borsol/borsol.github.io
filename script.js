@@ -62,22 +62,22 @@ fetch('jobs.xml')
             // Card dem Grid hinzufügen
             container.appendChild(card);
 
-            const smallQrPlaceholder =card.querySelector('.small-qr');
-            if(url){
-                new QRCode(smallQrPlaceholder, {text:url, width:50,height:50,colorDark : "#000000",colorLight : "#ffffff"});
-            }
-            
-            const largeQrPlaceholder =card.querySelector('.large-qr');
-            if(url){
-                new QRCode(largeQrPlaceholder, {text:url, width:160,height:160,colorDark : "#000000",colorLight : "#ffffff"});
+            const smallQrPlaceholder = card.querySelector('.small-qr');
+            if (url) {
+                new QRCode(smallQrPlaceholder, { text: url, width: 50, height: 50, colorDark: "#000000", colorLight: "#ffffff" });
             }
 
-            smallQrPlaceholder.addEventListener('click', function(e) {
+            const largeQrPlaceholder = card.querySelector('.large-qr');
+            if (url) {
+                new QRCode(largeQrPlaceholder, { text: url, width: 160, height: 160, colorDark: "#000000", colorLight: "#ffffff" });
+            }
+
+            smallQrPlaceholder.addEventListener('click', function (e) {
                 e.stopPropagation();
                 card.classList.add('is-flipped');
             });
-            
-            card.querySelector('.btn-zurueck').addEventListener('click', function(e) {
+
+            card.querySelector('.btn-zurueck').addEventListener('click', function (e) {
                 e.stopPropagation();
                 card.classList.remove('is-flipped');
             });
