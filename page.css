@@ -1,3 +1,17 @@
+:root {
+    --blue: #172536;
+    /* Blau */
+    --gold: #C6A34A;
+    /* Gold */
+    --red: #7A263A;
+    /*Rot*/
+    --green: #176B52;
+    /*Grün*/
+    --text-color: #333;
+    --bg-color: #f7f5fa;
+    --card-bg: #ffffff;
+}
+
 /*Innerer Container von den Inhalten*/
 .BW-webPositionDeteilScreen
 {
