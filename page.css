@@ -3,7 +3,7 @@
     /* Blau */
     --gold: #C6A34A;
     /* Gold */
-    --red: #7A263A;
+    --red: #bf5770;
     /*Rot*/
     --green: #176B52;
     /*Grün*/
@@ -55,12 +55,7 @@
 {
  background: green;
 }
-/*------------------------------------------Datumsfeld stylen------------------------------------------*/
 
-.gwt-DateBox
-{
- background:yellow;
-}
 
 required.gwt-DateBox
 {
@@ -78,11 +73,7 @@ required.gwt-DateBox
  background: purple;
 }
 
-/*------------------------------------------Textarea stylen------------------------------------------*/
-.LG-TextArea.required
-{
- background: orange;
-}
+
 
 /*------------------------------------------Combobox stylen------------------------------------------*/
 .gwt-combo-box.required{
@@ -135,8 +126,10 @@ required.gwt-DateBox
 .LG-TextBox
 {
  border: 2px solid #e6e6e6;
+ border-color: var(--gold);
  border-radius: 8px !important;
  transition: all .2s;
+ background: var(--card-bg);
 }
 
 .LG-TextBox.required
@@ -144,11 +137,67 @@ required.gwt-DateBox
  border: 2px solid #e6e6e6;
  border-radius: 8px !important;
  transition: all .2s;
+ background: #c6a34a45;
+ border-color: var(--gold);
+
 }
 
 .LG-TextBox.required:focus,
-
+.LG-TextBox:focus
 {
- border-color: var(--gold);
+ border-color: var(--green);
  box-shadow: 0 0 0 4px rgba(201,165,74,.15);
 }
+
+/*------------------------------------------Textarea------------------------------------------*/
+.LG-TextArea
+{
+ border: 2px solid #e6e6e6;
+ border-color: var(--gold);
+ border-radius: 8px !important;
+ transition: all .2s;
+ background: var(--card-bg);
+}
+
+.LG-TextArea.required
+{
+ border: 2px solid #e6e6e6;
+ border-radius: 8px !important;
+ transition: all .2s;
+ background: #c6a34a45;
+ border-color: var(--gold);
+}
+
+.LG-TextArea.required:focus,
+.LG-TextArea:focus
+{
+ border-color: var(--green);
+ box-shadow: 0 0 0 4px rgba(201,165,74,.15);
+}
+
+/*------------------------------------------Datumsfeld------------------------------------------*/
+.gwt-DateBox
+{
+  border: 2px solid #e6e6e6;
+ border-color: var(--gold);
+ border-radius: 8px !important;
+ transition: all .2s;
+ background: var(--card-bg);
+}
+
+.gwt-DateBox.required
+{
+ border: 2px solid #e6e6e6;
+ border-radius: 8px !important;
+ transition: all .2s;
+ background: #c6a34a45;
+ border-color: var(--gold);
+}
+
+.gwt-DateBox:focus,
+.gwt-DateBox.required:focus
+{
+ border-color: var(--green);
+ box-shadow: 0 0 0 4px rgba(201,165,74,.15);
+}
+
