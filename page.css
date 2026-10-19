@@ -1,1 +1,11 @@
-
+/*Innerer Container von den Inhalten*/
+.BW-webPositionDeteilScreen
+{
+ max-width: 1200px;
+ margin: 40px auto;
+ padding: 40px;
+ background: #fff;
+ border-radius: 20px;
+ box-shadow: 0 10px 30px rgba(0,0,0,.08);
+ border-top: 4px solid var(--gold);
+}
