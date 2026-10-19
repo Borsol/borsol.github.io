@@ -31,7 +31,11 @@
  border-top: 4px solid var(--gold);
 }
 
-/*------------------------------------------Pflichtfelder stylen------------------------------------------*/
+/*------------------------------------------Textbox stylen------------------------------------------*/
+.LG-TextBox{
+ background:purple;
+}
+
 .LG-TextBox.required
 {
  border: 2px solid #e6e6e6;
@@ -124,4 +128,27 @@ required.gwt-DateBox
 .LG-FacetItem-Edit.required
 {
  
+}
+
+
+/*------------------------------------------Textbox------------------------------------------*/
+.LG-TextBox
+{
+ border: 2px solid #e6e6e6;
+ border-radius: 8px !important;
+ transition: all .2s;
+}
+
+.LG-TextBox.required
+{
+ border: 2px solid #e6e6e6;
+ border-radius: 8px !important;
+ transition: all .2s;
+}
+
+.LG-TextBox.required:focus,
+
+{
+ border-color: var(--gold);
+ box-shadow: 0 0 0 4px rgba(201,165,74,.15);
 }
