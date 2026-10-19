@@ -12,6 +12,13 @@
     --card-bg: #ffffff;
 }
 
+
+/*Äußerer Rahmen mit zurück-button am Ende*/
+.BewerberWeb .BW-MainPanel
+{
+  border-radius: 20px !important;
+}
+
 /*Innerer Container von den Inhalten*/
 .BW-webPositionDeteilScreen
 {
@@ -22,4 +29,99 @@
  border-radius: 20px;
  box-shadow: 0 10px 30px rgba(0,0,0,.08);
  border-top: 4px solid var(--gold);
+}
+
+/*------------------------------------------Pflichtfelder stylen------------------------------------------*/
+.LG-TextBox.required
+{
+ border: 2px solid #e6e6e6;
+ border-radius: 8px !important;
+ transition: all .2s;
+}
+
+.LG-TextBox.required:focus,
+
+{
+ border-color: var(--gold);
+ box-shadow: 0 0 0 4px rgba(201,165,74,.15);
+}
+/*------------------------------------------Combobox stylen------------------------------------------*/
+.BW-WebPositionPage .gwt-combo-box-input, 
+.BW-WebPositionPage .combo-box-action-icon
+{
+ background: green;
+}
+/*------------------------------------------Datumsfeld stylen------------------------------------------*/
+
+.gwt-DateBox
+{
+ background:yellow;
+}
+
+required.gwt-DateBox
+{
+ background:yellow;
+}
+/*------------------------------------------Zeitfeld stylen------------------------------------------*/
+.required.gwt-TimeBox.LG-TimeBox,
+
+/*------------------------------------------Optionenfeld stylen------------------------------------------*/
+.LG-OptionPickerBox{
+ background: blue;
+}
+/*------------------------------------------Nummernfeld stylen------------------------------------------*/
+.LG-NumberBox{
+ background: purple;
+}
+
+/*------------------------------------------Textarea stylen------------------------------------------*/
+.LG-TextArea.required
+{
+ background: orange;
+}
+
+/*------------------------------------------Combobox stylen------------------------------------------*/
+.gwt-combo-box.required{
+ background: cyan;
+}
+
+.LG-SingleRadioButton.required{
+ background: greenyellow;
+}
+
+.LG-RadioButtonsGroup.required{
+  background: darkgreen;
+
+}
+
+.required.L2GMonthFieldTextBox {
+ 
+}
+
+
+.LG-HtmlBox.required
+{
+ 
+}
+
+
+.required.L2GMonthFieldTextBox
+{
+ 
+}
+
+.L2GMonthField.required
+{
+ 
+}
+
+
+.LG-FileController-Edit.required
+{
+ 
+}
+
+.LG-FacetItem-Edit.required
+{
+ 
 }
