@@ -32,7 +32,7 @@
 }
 
 .LG-RichTextContent{
-    display: none;
+    display: none !important;
 }
 
 /*------------------------------------------Textbox stylen------------------------------------------*/
