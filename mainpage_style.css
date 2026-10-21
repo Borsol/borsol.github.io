@@ -1,0 +1,418 @@
+:root {
+    --blue: #172536;
+    /* Blau */
+    --gold: #C6A34A;
+    /* Gold */
+    --red: #7A263A;
+    /*Rot*/
+    --green: #176B52;
+    /*Grün*/
+    --text-color: #333;
+    --bg-color: #f7f5fa;
+    --card-bg: #ffffff;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: stretch;
+
+    background: var(--blue);
+    border-bottom: 4px solid var(--gold);
+
+    min-height: fit-content;
+    overflow: hidden;
+}
+
+.header-image img {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    header {
+        min-height: 220px;
+
+    }
+
+    .header-image {
+        display: flex;
+        flex: 0 0 35%;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .header-image img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+
+        object-fit: cover;
+        object-position: center;
+        display: block;
+    }
+}
+
+.header-content {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 40px 60px;
+}
+
+.header-content h1 {
+    margin: 0;
+    color: white;
+    font-size: 3rem;
+}
+
+.header-content p {
+    margin-top: 12px;
+    color: var(--gold);
+    font-style: italic;
+    font-size: 1.3rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin: 0.5rem 0 0 0;
+    color: var(--gold);
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+main {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+}
+
+/* Grid-Layout für die modernen Cards */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/* Card-Styling */
+/* Das Grid-Element (Perspektive für den 3D-Effekt) */
+.card {
+    background-color: transparent;
+    /* Hintergrund wird jetzt vom Inner-Element übernommen */
+    box-shadow: none;
+    perspective: 1000px;
+    /* Ermöglicht den 3D-Effekt */
+    height: 350px;
+    /* Feste Höhe, damit die Karte beim Drehen stabil bleibt */
+}
+
+/* Der Container, der sich tatsächlich dreht */
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+    /* Wichtig für 3D-Ebenen */
+}
+
+/* Wenn die Klasse aktiv ist, dreht sich die Karte um 180 Grad */
+.card.is-flipped .card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Gemeinsame Stile für Vorder- und Rückseite */
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    /* Versteckt die Rückseite, wenn sie weggedreht ist */
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Design der Vorderseite */
+.card-front {
+    background-color: var(--card-bg, #ffffff);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-top: 5px solid var(--gold);
+}
+
+/* Design der Rückseite */
+.card-back {
+    background-color: var(--card-bg, #ffffff);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-top: 5px solid var(--red);
+    transform: rotateY(180deg);
+    /* Startet bereits umgedreht */
+    align-items: center;
+    /* Zentriert den großen QR-Code */
+    justify-content: left;
+}
+
+/* Kleiner QR-Code oben rechts (Nur auf Desktop) */
+.card .small-qr {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .card .small-qr {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background: white;
+        padding: 4px;
+        border: 2px solid var(--gold);
+        border-radius: 4px;
+        cursor: pointer;
+        /* Zeigt an, dass man klicken kann */
+    }
+
+    .card .small-qr:hover {
+        border-color: var(--red);
+    }
+}
+
+/* Großer QR-Code auf der Rückseite */
+.card .large-qr {
+    background: white;
+    padding: 5px;
+    border: 3px solid var(--red);
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.card .qr img {
+    display: block;
+}
+
+.div-box {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.div-box p {
+    margin: 0;
+    text-align: center;
+    /* Richtet den Text edel zum QR-Code hin aus */
+    align-self: center;
+}
+
+.hover-text {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.small-qr:hover .hover-text {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* Button zum Zurückdrehen */
+.btn-zurueck {
+    background: none;
+    border: 1px solid #999;
+    color: #666;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.btn-zurueck:hover {
+    background: #f5f5f5;
+}
+
+/* Deine bestehenden Text-Styles bleiben unverändert */
+.card h3 {
+    margin-top: 0;
+    color: var(--blue);
+    font-size: 1.4rem;
+}
+
+.card .location,
+.card .publishToDate {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.card .shortName {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #555;
+    flex-grow: 1;
+    margin-bottom: 1rem;
+}
+
+
+.btn-bewerben {
+    display: inline-block;
+    text-align: center;
+    background-color: var(--gold);
+    color: var(--blue);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.75rem;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.btn-bewerben:hover {
+    background-color: var(--red);
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.card-front:has(.btn-bewerben:hover) {
+    border-top-color: var(--red);
+}
+
+.error-msg {
+    color: #721c24;
+    background-color: #f8d7da;
+    padding: 1rem;
+    border-radius: 6px;
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.initiativ-div {
+    display: grid;
+    justify-items: center;
+}
+
+@media (min-width: 768px) {
+    .initiativ-div {
+        display: grid;
+        justify-items: left;
+    }
+}
+
+.initiativ {
+    margin-top: 2rem;
+
+    background: var(--blue);
+    color: white;
+
+    padding: 1.25rem 1.5rem;
+    border-radius: 12px;
+}
+
+a.initiativ {
+    display: block;
+    overflow-wrap: break-word;
+    background: var(--bg-color);
+    width: fit-content;
+    color: var(--gold);
+    text-decoration: none;
+    padding: 20px 24px;
+    margin-top: 25px;
+    border-radius: 12px;
+    border: 2px solid var(--gold);
+    font-size: 1.1rem;
+    font-weight: 700;
+
+}
+
+a.initiativ:hover {
+    border: 2px solid var(--red);
+    transition: border 0.2s;
+    box-shadow: 0 8px 25px rgba(44, 26, 77, 0.15);
+    color: var(--red);
+}
+
+.footer-motto {
+    text-align: center;
+    color: var(--gold);
+
+    font-style: italic;
+    padding-bottom: 20px;
+}
+
+footer {
+    background: var(--blue);
+    color: white;
+    margin-top: 80px;
+    border-top: 4px solid var(--gold);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 40px;
+
+    padding: 50px 30px;
+}
+
+.footer-column {
+    margin-left: 10px;
+}
+
+.footer-column h3 {
+    color: var(--gold);
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.footer-column p,
+.footer-column a {
+    display: block;
+
+    color: #e0e0e0;
+    text-decoration: none;
+
+    margin-bottom: 10px;
+
+    transition: color .2s ease;
+}
+
+.footer-column a:hover {
+    color: var(--gold);
+}
+
+.footer-bottom {
+    text-align: center;
+
+    padding: 20px;
+
+    border-top: 1px solid rgba(255, 255, 255, .15);
+
+    color: #bfbfbf;
+    font-size: .9rem;
+}
