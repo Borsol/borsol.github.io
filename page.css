@@ -31,6 +31,10 @@
  border-top: 4px solid var(--gold);
 }
 
+.LG-RichTextContent{
+    display: none;
+}
+
 /*------------------------------------------Textbox stylen------------------------------------------*/
 .LG-TextBox{
  background:purple;
