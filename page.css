@@ -56,7 +56,7 @@
  background: green;
 }
 
-#BW-WebPositionPage .LG-RichTextContent{
+div.LG-RichTextContent{
     display: none !important;
 }
 
