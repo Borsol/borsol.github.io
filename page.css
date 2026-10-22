@@ -17,6 +17,7 @@
 .BewerberWeb .BW-MainPanel
 {
   border-radius: 20px !important;
+  padding: 20px !important;
 }
 
 /*Innerer Container von den Inhalten*/
@@ -29,6 +30,11 @@
  border-radius: 20px;
  box-shadow: 0 10px 30px rgba(0,0,0,.08);
  border-top: 4px solid var(--gold);
+}
+
+
+div.LG-RichTextContent{
+    display: none !important;
 }
 
 /*------------------------------------------Textbox stylen------------------------------------------*/
@@ -55,12 +61,6 @@
 {
  background: green;
 }
-
-div.LG-RichTextContent{
-    display: none !important;
-}
-
-
 required.gwt-DateBox
 {
  background:yellow;
