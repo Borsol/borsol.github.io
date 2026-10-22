@@ -56,6 +56,10 @@
  background: green;
 }
 
+#BW-WebPositionPage .LG-RichTextContent{
+    display: none !important;
+}
+
 
 required.gwt-DateBox
 {
