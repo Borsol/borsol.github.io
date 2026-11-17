@@ -1,4 +1,4 @@
-fetch('jobs.xml')
+fetch('https://hannit.pi-asp.de/bewerber-web/public/JobPortalData?companyEid=0001&tenant=27700&lang=D&jobPortal=7d51b858-e466-400d-8696-5e01d3b26140')
     .then(response => {
         if (!response.ok) {
             throw new Error('Der Zaubereikristall muss neu aufgeladen werden.');
