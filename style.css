@@ -58,6 +58,11 @@ header {
         display: block;
     }
 }
+.div_iframe{
+    display: block;
+    heigth: auto;
+}
+
 
 .header-content {
     flex: 1;
